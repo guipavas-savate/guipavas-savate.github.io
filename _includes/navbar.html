@@ -1,0 +1,46 @@
+{% assign page_paths = site.pages | where: "header", true | sort: "order" | map: "path" %}
+
+{% if page_paths %}
+<nav class="navbar is-primary" role="navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="/images/guipavas-savate-blanc.png" width="246px" alt="Guipavas Savate"/>
+        </a>
+        <div class="navbar-burger burger" data-target="mainNavBar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <div id="mainNavBar" class="navbar-menu">
+        <div class="navbar-end">
+            <!-- Iterate over header pages -->
+            {% for path in page_paths %}
+                {% assign my_page = site.pages | where: "path", path | first %}
+                {% if my_page.title %}
+                    {% if page.url == my_page.url %}
+                    <a id="current" class="navbar-item has-text-weight-bold" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                    {% else %}
+                    <a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                    {% endif %}
+                {% endif %}  
+            {% endfor %}
+   
+            {% for contact in site.data.main.contacts %}
+                <a class="navbar-item is-rounded is-size-3-tablet is-size-5-mobile" href="{{contact.href}}">
+                    <span class="icon">
+                        <i class="{{contact.logo}}"></i>
+                    </span>
+                </a>
+            {% endfor %}
+
+
+            <a class="navbar-item" href="/">
+                <img  src="/images/logo-rond.png" alt="Guipavas Savate"/>
+            </a>
+        </div>
+
+    </div>
+</nav>
+{% endif %}

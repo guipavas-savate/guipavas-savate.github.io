@@ -1,0 +1,11 @@
+
+contacts:
+  - facebook:
+    href: https://www.facebook.com/Guipavas-Savate-Boxe-Française-116715196372110
+    logo: fab fa-facebook
+  - instagram:
+    href: https://www.instagram.com/guipavas-savate/
+    logo: fab fa-instagram
+  - email: 
+    href: mailto:guipavas.savate@hotmail.com
+    logo: fas fa-envelope

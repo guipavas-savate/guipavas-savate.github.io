@@ -1,0 +1,25 @@
+<section class="hero" id="contact" data-title="Contact">
+    <div class="hero-body cent-hero cent-contact has-text-centered">
+        <div class="field has-addons has-addons-centered">
+            <div class="control">
+                <div
+                    class="button is-rounded title has-text-primary has-text-weight-bold is-size-3-tablet is-size-5-mobile">
+                    Suivez nous
+                </div>
+            </div>
+
+            <!-- Iterate over contact methods-->
+            {% for contact in site.data.main.contacts %}
+            <div class="control">
+                <a class="button is-rounded is-size-3-tablet is-size-5-mobile" href="{{contact.href}}">
+                    <span class="icon">
+                        <i class="{{contact.logo}}"></i>
+                    </span>
+                </a>
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</section>
