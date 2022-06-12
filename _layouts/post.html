@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<section id="post" class="section container">
+
+    <div class="columns">
+        <div class="column is-half">
+            <a href="{{ page.url | relative_url }}" class="card-image">
+                <figure class="image is-square">
+                    <img src="{{page.img}}" alt="{{page.title}}">
+                </figure>
+            </a>
+        </div>
+        <div class="column is-half">
+            <h1 class="title is-4">{{page.title}}</h1>
+
+            {{ page.content }}
+              
+            <br/>
+            
+            <div class="tags are-large">      
+            {% for tag in page.tags %}
+                <span class="tag is-rounded">{{tag}}</span>
+            {% endfor %}
+            </div>
+
+            <div class="has-text-right is-italic">
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                <time datetime="{{page.date}}">{{ page.date | date: date_format }}</time>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+       
+        <div class="field is-horizontal">
+            <div class="field-body">
+                <div class="field is-grouped is-grouped-multiline">
+                    <p class="control">
+                        <a 
+                            class="button is-rounded is-primary" style="background-color: #55acee" 
+                            href="https://twitter.com/intent/tweet/?text={{ page.description | url_encode }}&url={{ site.url | url_encode }}{{ page.url | url_encode }}&via=centyllion" 
+                            target="_blank" rel="noopener" aria-label="{{ site.data.layout.shareon[lang] }} Twitter"
+                        >
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                            <span>{{ site.data.layout.shareon[lang] }} Twitter</span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a 
+                            class="button is-rounded is-primary" style="background-color: #3b5998" 
+                            href="https://facebook.com/sharer/sharer.php?u={{ site.url | url_encode }}{{ page.url | url_encode }}" 
+                            target="_blank" rel="noopener" aria-label="{{ site.data.layout.shareon[lang] }} Facebook"
+                        >
+                            <span class="icon"><i class="fab fa-facebook"></i></span>
+                            <span>{{ site.data.layout.shareon[lang] }} Facebook</span>
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

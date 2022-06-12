@@ -5,3 +5,15 @@ description: Actualités du club
 header: true
 order: 1
 ---
+
+<div class="section">
+    <div class="container">
+        {% include blog_posts.html %} 
+
+
+        <section class="container">
+            <h2 class="is-size-3-desktop subtitle">{{site.data.layout.follow[lang]}} <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></h2>
+        </section>
+
+    </div>
+</div>

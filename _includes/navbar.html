@@ -14,19 +14,21 @@
     </div>
     
     <div id="mainNavBar" class="navbar-menu">
-        <div class="navbar-end">
+        <div class="navbar-start">
             <!-- Iterate over header pages -->
             {% for path in page_paths %}
-                {% assign my_page = site.pages | where: "path", path | first %}
-                {% if my_page.title %}
-                    {% if page.url == my_page.url %}
-                    <a id="current" class="navbar-item has-text-weight-bold" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                    {% else %}
-                    <a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                    {% endif %}
-                {% endif %}  
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+                {% if page.url == my_page.url %}
+                <a id="current" class="navbar-item has-text-weight-bold" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {% else %}
+                <a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {% endif %}
+            {% endif %}  
             {% endfor %}
-   
+        </div>
+        <div class="navbar-end">
+           
             {% for contact in site.data.main.contacts %}
                 <a class="navbar-item is-rounded is-size-3-tablet is-size-5-mobile" href="{{contact.href}}">
                     <span class="icon">
