@@ -1,11 +1,18 @@
 
 contacts:
+  - phone:
+    label: 06 61 56 08 83
+    href: tel:06 61 56 08 83
+    logo: fas fa-phone
   - facebook:
+    label: Facebook
     href: https://www.facebook.com/Guipavas-Savate-Boxe-Française-116715196372110
     logo: fab fa-facebook
   - instagram:
-    href: https://www.instagram.com/guipavas-savate/
+    label: Instagram
+    href: https://www.instagram.com/guipavas_savate/
     logo: fab fa-instagram
   - email: 
+    label: guipavas.savate@hotmail.com
     href: mailto:guipavas.savate@hotmail.com
     logo: fas fa-envelope
