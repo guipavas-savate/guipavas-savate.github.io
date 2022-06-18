@@ -29,5 +29,4 @@ function activateNavbar() {
 
 document.addEventListener('DOMContentLoaded', function () {
     activateNavbar()
-    showTableOfContents()
-});js
+});
