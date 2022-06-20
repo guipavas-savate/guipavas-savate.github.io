@@ -2,46 +2,52 @@
     {% assign posts = site.posts %}
     {% for post in posts %}
         <div class="column is-half">
-            <div class="card" style="border-radius: 6px;">
-                <a href="{{ post.url | relative_url }}" class="card-image">
-                    <figure class="image is-square">
-                        <img src="{{post.img}}" alt="{{post.title}}">
-                    </figure>
-                </a>
-                <div class="card-content">
-                    <h1 class="title is-4">{{post.title}}</h1>
-                        
-                    {%if post.description %}{{ post.description }}{% else %}{{ post.content | truncatewords: 20 }}{% endif %}
+            <a href="{{ post.url | relative_url }}" class="card-image">
+                <div class="card" style="border-radius: 6px;">
+                        <figure class="image is-square">
+                            <img src="{{post.img}}" alt="{{post.title}}">
+                        </figure>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-4">{{post.title}}</h1>
+                                
+                            {%if post.description %}{{ post.description }}{% else %}{{ post.content | truncatewords: 20 }}{% endif %}
 
-                    <!--
-                        <div class="tags are-large">      
-                        {% for tag in post.tags %}
-                            <span class="tag is-rounded">{{tag}}</span>
+                            <div class="level mt-4">
+                                <div class="level-left">
+                                    <div class="tags are-large">      
+                                    {% for tag in post.tags %}
+                                        <span class="tag is-info is-rounded">{{tag}}</span>
+                                    {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item has-text-right is-italic">
+                                        <time datetime="{{ post.date | html5date }}">{{ post.date | frenchDate }}</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        {% for author_id in post.authors %}
+                        {% assign author = site.data.people[author_id] %}
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="{{author.photo}}" alt="{{author.firstname}} {{author.lastname}}">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-5">{{author.firstname}} {{author.lastname}}</p>
+                                <p class="subtitle is-6"><a href="mailto:{{author.email}}">{{author.email}}</a></p>
+                            </div>
+                        </div>
                         {% endfor %}
-                        </div>
-                    -->
-                    <div class="has-text-right is-italic">
-                        <time datetime="{{ post.date | html5date }}">{{ post.date | frenchDate }}</time>
                     </div>
-
                 </div>
-                <div class="card-content">
-                    {% for author_id in post.authors %}
-                    {% assign author = site.data.people[author_id] %}
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{author.photo}}" alt="{{author.firstname}} {{author.lastname}}">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-5">{{author.firstname}} {{author.lastname}}</p>
-                            <p class="subtitle is-6"><a href="mailto:{{author.email}}">{{author.email}}</a></p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+            </a>
+                    
         </div>
     {% endfor %}
 </div>
