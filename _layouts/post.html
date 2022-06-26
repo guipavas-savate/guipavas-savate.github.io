@@ -77,7 +77,7 @@ layout: default
         <div class="level-right">
             <div class="level-item">
                 <div class="level-item has-text-right is-italic">
-                    <time datetime="{{ page.date | html5date }}">{{ page.date | frenchDate }}</time>
+                    <time datetime="{{ page.date | date: '%Y-%m-%d }}">{{ page.date | date: '%d/%m/%Y' }}</time>
                 </div>
             </div>
         </div>

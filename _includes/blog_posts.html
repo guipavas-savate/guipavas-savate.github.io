@@ -23,7 +23,7 @@
                                 </div>
                                 <div class="level-right">
                                     <div class="level-item has-text-right is-italic">
-                                        <time datetime="{{ post.date | html5date }}">{{ post.date | frenchDate }}</time>
+                                        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d/%m/%Y' }}</time>
                                     </div>
                                 </div>
                             </div>
