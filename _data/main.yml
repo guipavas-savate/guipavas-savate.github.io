@@ -12,3 +12,10 @@ contacts:
     label: guipavas.savate@hotmail.com
     href: mailto:guipavas.savate@hotmail.com
     logo: fas fa-envelope
+
+
+photos:
+  - src: /images/photos/milles-gants-2022-2.jpg
+    description: Les jeunes boxeurs et entraineurs de Guipavas au tournoi des milles gants à Morlaix en 2022.
+  - src: /images/photos/open-lannester-2022-1.jpg
+    description: La decision pour la vistoire de Jean-Benoit à l'open de Bretagne à Lannester après un bel assaut en 2022.
