@@ -23,4 +23,6 @@ Le club ouvre les pré-inscriptions pour la saison 2022-2023. Vous pouvez vous p
 
 Pour la pré-inscription nous ne demandons qu'à remplir la feuille d’inscription en lien plus bas. La cotisation et le certificat medical ne sont demandés qu’à la rentrée en septembre. Si c’est une première inscription, nous demandons en plus de signer le règlement intérieur et l’autorisation pour le droit à l’image.
 
-Le formulaire de pré-inscription peut être rempli directement sur l’ordinateur avec le visualisateur de PDF,  vous pouvez aussi l’imprimer, le remplir et nous l’apporter en cours ou le scanner et le renvoyer par email.
+La cotisation est de 110€ pour les enfants et 180€ à partir de 15 ans. Le reglèment est demandé pour inscription finale en septembre et peut être effectué en plusieurs fois.
+
+Le formulaire de pré-inscription peut être rempli directement sur l’ordinateur avec le visualisateur de PDF, vous pouvez aussi l’imprimer, le remplir et nous l’apporter en cours ou le scanner et le renvoyer par email.
