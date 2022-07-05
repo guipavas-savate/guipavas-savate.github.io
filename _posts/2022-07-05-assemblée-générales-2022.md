@@ -6,7 +6,7 @@ tags: [assemblée]
 img: /images/photos/ag-2022.png
 downloads:
   - label: PV Assemblée Générale 2022.pdf
-    href: /ressources/2022/PV Assemblée Générale 2022.pdf
+    href: /ressources/2022/PV AG.pdf
     description: Le compte rendu de l'assemblée générale 2022 du club Guipavas Savate.
 ---
 
