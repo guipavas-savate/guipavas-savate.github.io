@@ -38,7 +38,11 @@
             {% endfor %}
 
             <a class="navbar-item" href="/">
-                <img  src="/images/logo-rond.webp" alt="Guipavas Savate"/>
+                <picture>
+                    <source srcset="/images/logo-rond.webp" type="image/webp">
+                    <source srcset="/images/logo-rond.png" type="image/png">
+                    <img src="/images/logo-rond.webp" alt="Guipavas Savate">
+                </picture>
             </a>
         </div>
     </div>
