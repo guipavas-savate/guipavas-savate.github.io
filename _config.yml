@@ -1,13 +1,12 @@
 title: Guipavas Savate
 url: https://guipavas-savate.github.io
-logo: /images/logo-rond.png
+logo: /images/logo-rond.webp
 destination: ./build
 
 kramdown:
     input: GFM
     hard_wrap: false
     syntax_highlighter: rouge
-
 
 plugins:
     - jekyll-feed
