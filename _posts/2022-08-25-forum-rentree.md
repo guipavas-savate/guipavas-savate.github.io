@@ -2,7 +2,7 @@
 layout: post
 title: Forum des associations et rentrée
 description: Le club sera présent au forum des associations de Guipavas venez nous voir nombreux ! Les cours reprennent la semaine du 5 septembre, on a hâte de vous revoir. 
-tags: [assemblée]
+tags: [association]
 img: /images/forum_asso2022.png
 ---
 
@@ -10,4 +10,4 @@ Le club sera présent au forum des associations de Guipavas venez nous voir nomb
 
 [Forum des associations sur le site de la commune de Guipavas](https://guipavas.bzh/pages-speciales/fonctionnalites/agenda-133/forum-des-associations-2441.html?cHash=53022821c6121e2ad05a9db962539e14).
 
-Les cours reprennent pour tout le monde la semaine du 5 septembre, on a hâte de vous revoir.
+Les cours reprennent pour tout le monde la semaine du 5 septembre, on a hâte de vous voir.
