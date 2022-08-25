@@ -11,6 +11,26 @@
 <title>{{ title }}</title>
 <meta itemprop="description" name="description" content="{{page.description | truncate: 160 }}"/>
 
+<!-- Open graph -->
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="Guipavas Savate">
+<!-- <meta property="article:published_time" content="2019-09-8 10:30:00 +0000" /> -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="{{page.lang}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{ page.description }}">
+
+<meta property="og:image" content="{{ site.url }}{%if page.img %}{{ page.img }}{% else %}/images/logo-rond.png{% endif %}" />
+
+<!-- Twitter card-->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}{%if page.img %}{{ page.img }}{% else %}/images/logo-rond.png{% endif %}">
+<!--<meta name="twitter:site" content="@guipavas-savate" />-->
+<meta name="twitter:domain" content="guipavas-savate.fr">
+<meta name="twitter:card" content="summary">
+
 <link rel="stylesheet" href="/css/main.css" />
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
