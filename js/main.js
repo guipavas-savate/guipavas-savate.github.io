@@ -4,7 +4,7 @@ function querySelectorAll(selector) {
 
 function activateNavbar() {
     // Get all "navbar-burger" elements
-    var navbarBurgers = querySelectorAll('.navbar-burger')
+    let navbarBurgers = querySelectorAll('.navbar-burger')
 
     // Check if there are any navbar burgers
     if (navbarBurgers.length > 0) {
@@ -14,8 +14,8 @@ function activateNavbar() {
             el.addEventListener('click', function () {
 
                 // Get the target from the "data-target" attribute
-                var target = el.dataset.target
-                var target = document.getElementById(target)
+                let target = el.dataset.target
+                target = document.getElementById(target)
 
                 // Toggle the class on both the "navbar-burger" and the "navbar-menu"
                 el.classList.toggle('is-active')
