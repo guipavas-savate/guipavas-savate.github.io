@@ -15,6 +15,10 @@ contacts:
 
 
 photos:
+  - src: /images/photos/championnat-jeune-finistere-2023-1.jpeg
+    description: Le groupe de boxeurs et entraineur de Guipavas au championnat jeunes à Lesneven en 2023.
+  - src: /images/photos/championnat-jeune-finistere-2023-2.jpeg
+    description: Sylain prépare les boxeurs pour la compétition.
   - src: /images/photos/milles-gants-2022-2.jpg
     description: Les jeunes boxeurs et entraineurs de Guipavas au tournoi des milles gants à Morlaix en 2022.
   - src: /images/photos/open-lannester-2022-1.jpg
