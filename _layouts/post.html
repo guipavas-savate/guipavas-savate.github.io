@@ -4,39 +4,35 @@ layout: default
 
 <section id="post" class="section container">
 
-    <div class="columns">
-        <div class="column is-half">
-            <a href="{{ page.url | relative_url }}" class="card-image">
-                <figure class="image">
-                    <img src="{{page.img}}" alt="{{page.title}}">
-                </figure>
-            </a>
-        </div>
-        <div class="column is-half">
-            <div class="content">
-                <h1 class="title is-4">{{page.title}}</h1>
+    <a href="{{ page.url | relative_url }}" class="card-image">
+        <figure class="image">
+            <img src="{{page.img}}" alt="{{page.title}}">
+        </figure>
+    </a>
 
-                {{ page.content }}
-                
-                <div class="list has-hoverable-list-items has-visible-pointer-controls">
-                {% for download in page.downloads %}
-                    <a class="list-item" href="{{ download.href }}">
-                        <div class="list-item-image">
-                            <span class="icon is-large">
-                                <i class="fas fa-2x fa-download"></i>
-                            </span>
-                        </div>
-                        <div class="list-item-content">
-                            <div class="list-item-title">Télécharger <span class="is-family-code is-size-6">"{{ download.label }}"</span></div>
-                            <div class="list-item-description">{{ download.description }}</div>
-                        </div>
-                    </a>
-                {% endfor %}
+
+    <div class="content mt-4">
+        <h1 class="title is-4">{{page.title}}</h1>
+
+        {{ page.content }}
+
+        <div class="list has-hoverable-list-items has-visible-pointer-controls">
+        {% for download in page.downloads %}
+            <a class="list-item" href="{{ download.href }}">
+                <div class="list-item-image">
+                    <span class="icon is-large">
+                        <i class="fas fa-2x fa-download"></i>
+                    </span>
                 </div>
-
-            </div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Télécharger <span class="is-family-code is-size-6">"{{ download.label }}"</span></div>
+                    <div class="list-item-description">{{ download.description }}</div>
+                </div>
+            </a>
+        {% endfor %}
         </div>
     </div>
+
 
     <div class="level">
         <div class="level-left">
