@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Weekend du Club à l'île de Batz
-description: Le club organise un weekend à l'île de Batz ouvert à tous.
+description: Le week end du club à l’île de Batz arrive. Le weekend du 8 juin, nous proposons un weekend convivial ensemble.
+Il est est ouvert à tous: aux membres de club, aux conjoints et aux enfants.
+
 tags: [weekend]
 img: https://www.iledebatz.com/sites/default/files/im09.jpg
 ---
