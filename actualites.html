@@ -1,0 +1,13 @@
+---
+layout: default
+title: Actualités
+description: Actualités du club
+header: true
+order: 2
+---
+
+{% include blog_posts.html %} 
+
+<section class="container">
+    <h2 class="is-size-3-desktop subtitle">{{site.data.layout.follow[lang]}} <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></h2>
+</section>

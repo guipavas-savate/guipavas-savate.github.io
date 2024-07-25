@@ -1,13 +1,31 @@
 ---
-layout: default
-title: Actualités
-description: Actualités du club
+title: Accueil
+description: Guipavas Savate
 header: true
 order: 1
 ---
 
-{% include blog_posts.html %} 
+<html lang="fr" prefix="og:http://ogp.me/ns#">
 
-<section class="container">
-    <h2 class="is-size-3-desktop subtitle">{{site.data.layout.follow[lang]}} <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></h2>
-</section>
+    <head>
+        {% include head.html %}
+    </head>
+
+    <body class="is-size-5-desktop">
+
+        {% include navbar.html %}
+
+        <div class="columns">
+            {% assign post = site.posts | first %}
+            {% include post_card.html %}
+
+            <div class="section column is-half">
+                {% include horaires_grand.html %}
+            </div>
+        </div>
+
+        {% include contact.html %}
+        {% include footer.html %}
+
+    </body>
+</html>
