@@ -12,7 +12,7 @@ order: 3
 </h1>
 
 {% for month in site.data.calendar.months %}
-<h2 class="subtitle is-2 is-primary">{{ month.title }}</h2>
+<h2 id="{{ month.title | slugify }}" class="subtitle is-2 has-text-centered has-text-weight-bold has-text-white has-background-info-dark">{{ month.title }}</h2>
 
 <table class="table is-fullwidth">
 {% for event in month.events %}
