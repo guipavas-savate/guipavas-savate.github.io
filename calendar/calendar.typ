@@ -4,35 +4,37 @@
 
 #let calendarHeader(calendar) = {
   grid(
-    columns: (4cm, 1fr, 4cm), 
-    align: (horizon+left, horizon+center, horizon+right),
+    columns: (2cm, 4cm, 1fr, 4cm, 2cm), 
+    align: (horizon+left, horizon+left, horizon+center, horizon+right, horizon+right),
+    text[],
     image("../images/logo-rond.png"), 
     block[
-      #image("../images/guipavas-savate-noir.png", height: 3cm)
+      #image("../images/guipavas-savate-noir.png", height: 2cm)
       #v(.3cm)
-      #align(center, underline(text(size: 36pt, weight: "bold",calendar.title)))
+      #align(center, underline(text(size: 18pt, weight: "bold",calendar.title)))
     ], 
-    //image("../images/logo-rond.png"), 
-    qr-code("https://www.guipavas-savate.fr/calendrier.html")
+    qr-code("https://www.guipavas-savate.fr/calendrier.html"),
+    text[],
   )
 }
 
 #set page(
-  paper: "a4",
-  margin: (top: 8cm, left: 1cm, right: 1cm),
-  header: calendarHeader(source),
+  paper: "a4", flipped: true,
+  margin: (top: 5cm, left: .5cm, right: .5cm, bottom: .5cm),
+  columns: 2,
+  header: calendarHeader(source), header-ascent: .5cm
 )
 
 #set par(
-  spacing: .3cm
+  spacing: .1cm
 )
 
-#set text(16pt)
+#set text(13pt)
 
 
 #let monthTitle(color: blue, content) = rect(
   fill: rgb(color), stroke: rgb(color), inset: 10pt, radius: .1cm, width: 100%,
-  align(center, text(fill: white, size: 20pt, content))
+  align(center, text(fill: white, stroke:white, size: 12pt, content))
 )
 
 #let month(month) = {

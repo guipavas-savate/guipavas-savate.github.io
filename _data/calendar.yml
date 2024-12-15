@@ -72,7 +72,7 @@ months:
         - date: 7 et 8
           name: Championnat Jeunes
           place: Île-de-France
-        - date: "Dimanche 15 #linebreak() *ou 11 mai*"
+        - date: "Dimanche 15"
           name: Tournoi des Milles Gants
           place: _à définir_
         - date: Dimanche 15
