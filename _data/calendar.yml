@@ -1,0 +1,81 @@
+title: Calendrier 2025
+months:
+    - title: Janvier
+      color: "#0074d9"
+      events:
+        - date: Dimanche 5
+          name: Regroupement Compétiteurs
+          place: Plomodierne
+        - date: Samedi 11
+          name: "*Loto organisé par le club*"
+          place: Salle du Moulin Neuf
+        - date: Dimanche 19
+          name: Gant Jaune
+          place: Plomodierne
+        - date: Samedi 26
+          name: Championnat Jeune Finistère
+          place: Lesneven
+    - title: Février
+      color: "#2ecc40"
+      events:
+        - date: Dimanche 9
+          name: Regroupement Compétiteurs
+          place: Morlaix
+        - date: Dimanche 23
+          name: Sélection Ligue Benjamins/Minimes
+          place: _à définir_
+    - title: Mars
+      color: "#ff4136"
+      events:
+        - date: Samedi 8
+          name: Sélection Ligue de Cadets à Vétérans
+          place: Morlaix
+        - date: Samedi 8
+          name: Nuit de la Savateuse
+          place: Morlaix
+        - date: Dimanche 23
+          name: "*Open du Finistère*"
+          place: Guipavas
+    - title: Avril
+      color: "#0074d9"
+      events:
+        - date: 5 et 6
+          name: UC 3
+          place: Plomodierne
+        - date: Samedi 19
+          name: Open de Bretagne
+          place: Crozon
+        - date: 26 et 27
+          name: Championnat Juniors et Sénior
+          place: Paris
+    - title: Mai
+      color: "#2ecc40"
+      events:
+        - date: 10 et 11
+          name: Championnat Vétérans
+          place: _à définir_
+        - date: 17 et 18
+          name: Championnat Cadet
+          place: _à définir_
+        - date: 24 et 25
+          name: Open Nationnal
+          place: Le Puy en Velay
+        - date: 31 et 1 juin
+          name: Sélection Zones Jeunes
+          place: _à définir_
+    - title: Juin
+      color: "#ff4136"
+      events:
+        - date: 7 et 8
+          name: Championnat Jeunes
+          place: Île-de-France
+        - date: "Dimanche 15 #linebreak() *ou 11 mai*"
+          name: Tournoi des Milles Gants
+          place: _à définir_
+        - date: Dimanche 15
+          name: Examen du Monitorat
+          place: Plescop
+        - date: 28 et 29
+          name: "*Weekend du club*"
+          place: Mahalon
+

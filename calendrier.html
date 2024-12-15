@@ -1,0 +1,27 @@
+---
+layout: default
+title: Calendrier
+description: Calendrier de saison
+header: true
+order: 3
+---
+
+<h1 class="title is-1">
+    {{site.data.calendar.title}}
+    (<a href="calendar/calendar.pdf">pdf</a>)
+</h1>
+
+{% for month in site.data.calendar.months %}
+<h2 class="subtitle is-2 is-primary">{{ month.title }}</h2>
+
+<table class="table is-fullwidth">
+{% for event in month.events %}
+<tr>
+    <td class="has-text-left">{{event.date | markdownify }}</td>
+    <td class="has-text-center">{{event.name | markdownify }}</td>
+    <td class="has-text-right">{{event.place | markdownify }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endfor %}
