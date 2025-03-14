@@ -73,3 +73,24 @@
     month(monthData)
   }
 }
+
+
+#let calendarHtml(source) = {
+  /*
+    set page(
+    paper: "a5",
+    margin: (top: 5cm, left: .5cm, right: .5cm, bottom: .5cm),
+    //columns: 2,
+    header: calendarHeader(source), header-ascent: .5cm
+  )
+*/
+  set par(
+    spacing: .1cm
+  )
+
+  set text(13pt)
+
+  for monthData in source.months {
+    month(monthData)
+  }
+}
