@@ -3,7 +3,7 @@ layout: post
 title: Stage de Cohésion à Mahalon
 description: Le week end du club est prevu. Le weekend du 28 juin, nous proposons un weekend convivial ensemble dans un gite à Mahalon.
 tags: [weekend]
-img: https://mahalon.fr/wp-content/uploads/2022/01/Centre-de-Decouverte.jpg
+img: /images/Centre-de-Decouverte-Mahalon.jpg
 ---
 
 
