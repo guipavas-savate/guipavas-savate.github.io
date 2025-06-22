@@ -1,3 +1,5 @@
+
+
 <table class="table has-text-centered is-striped is-narrow- is-hoverable is-fullwidth">
     <tr>
         <th></th>
@@ -5,129 +7,51 @@
         <th class="has-text-centered">Âge</th>
         <th class="has-text-centered">Horaire</th>
     </tr>
-    <tr>
-        <th class="is-size-4 is-vcentered">Lundi</th>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-warning">Savate</span>
-                <span class="tag is-large is-rounded is-link is-light">Tous niveaux</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Adultes</b> <br />15 ans et plus</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;18h30 <br />à&nbsp;20h30</span></td>
-    </tr>
-    <tr>
-        <th class="is-size-4 is-vcentered">Mardi</th>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-success">Cardio Boxing</span>
-                <span class="tag is-large is-rounded is-link is-light">Tous niveaux</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Adultes</b> <br />15 ans et plus</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;18h30 <br /> à&nbsp;19h00</span></td>
-    </tr>
-    <tr>
-        <th rowspan=4 class="is-size-4 is-vcentered">Mercredi</th>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-warning">Savate</span>
-                <span class="tag is-large is-rounded is-link is-light">Tous niveaux</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Enfants</b> <br />de 6 à 10 ans</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;14h <br /> à&nbsp;15h15</span></td>
-    </tr>
-    <tr>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-warning">Savate</span>
-                <span class="tag is-large is-rounded is-link is-light">Tous niveaux</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Adolescents</b> <br />de 11 à 14 ans</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;15h30 <br /> à&nbsp;17h</span></td>
-    </tr>
-    <tr>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-danger">Anglaise</span>
-                <span class="tag is-large is-rounded is-link is-light">Tous niveaux</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Tous Publics</b> <br />à partir de 13 ans</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;17h15 <br /> à&nbsp;18h45</span></td>
-    </tr>
-    <tr>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-warning">Savate</span>
-                <span class="tag is-large is-rounded is-light is-success">Débutants</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Adultes</b> <br />15 ans et plus</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;19h00 <br /> à&nbsp;20h30</span></td>
-    </tr>
-    <tr>
-        <th class="is-size-4 is-vcentered">Jeudi</th>
-        <td class="is-vcentered">
-            <div class="tags">
-                <span class="tag is-large is-rounded is-warning">Savate</span>
-                <span class="tag is-large is-rounded is-light is-danger">Confirmés</span>
-            </div>
-        <td class="is-vcentered"><b>Adultes</b> <br />15 ans et plus</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;18h30 <br /> à&nbsp;20h30</span></td>
-    </tr>
-    <tr>
-        <th class="is-size-4 is-vcentered">Vendredi</th>
-        <td class="is-vcentered">
-            <div class="tags">   
-                <span class="tag is-large is-rounded is-danger">Anglaise</span>
-                <span class="tag is-large is-rounded is-light is-link">Tous niveaux</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Tous Publics</b> <br />à partir de 6 ans</td>
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;18h00 <br /> à&nbsp;19h00</span></td>
-    </tr>
-    <tr>
-        <th class="is-size-4 is-vcentered">Samedi</th>
-        <td class="is-vcentered">
-            <div class="tags ">
-                <span class="tag is-large is-rounded is-warning">Savate</span>
-                <span class="tag is-large is-rounded is-light is-link">Développement</span>
-                <span class="tag is-large is-rounded is-light is-outlined is-danger">Compétition</span>
-            </div>
-        </td>
-        <td class="is-vcentered"><b>Tous Publics</b> <br />à partir de 10 ans</td>
 
-        <td class="is-vcentered"><span class="has-text-weight-bold">de&nbsp;9h30 <br /> à&nbsp;11h00</span></td>
-    </tr>
-
+    {% for jours in site.data.horaires %}
+        {% for jour in jours %}
+            <tr>
+            <th rowspan="{{ jour[1] | size }}" class="is-size-4 is-vcentered">{{jour[0]}}</th>
+        
+            {% for horaire in jour[1] %}
+            <td class="is-vcentered">
+                <div class="tags">
+                    {% assign dTag = "" %}
+                    {% case horaire.discipline %}
+                    {% when "Savate" %}
+                        {% assign dTag = "is-warning" %}
+                    {% when "CardioBoxing" %}
+                        {% assign dTag = "is-success" %}
+                    {% when "Anglaise" %}
+                        {% assign dTag = "is-danger" %}
+                    {% endcase %}
+                    <span class="tag is-large is-rounded {{dTag}}">{{horaire.discipline}}</span>
+                    
+                    {% assign niveaux = horaire.niveau | split: ", " %}
+                    {% for niveau in niveaux %}
+                        {% assign nTag = "" %}
+                        {% case niveau %}
+                        {% when "Tous Niveaux", "Développement" %}
+                            {% assign nTag = "is-link" %}
+                        {% when "Débutants" %}
+                            {% assign nTag = "is-success" %}
+                        {% when "Confirmés", "Compétitions" %}
+                            {% assign nTag = "is-danger" %}
+                        {% endcase %}
+                        <span class="tag is-medium is-rounded {{nTag}} is-light">{{ niveau }}</span>
+                    {% endfor %}
+                </div>
+            </td>
+            <td class="is-vcentered">
+                <b>{{horaire.public}}</b> <br />
+                {{horaire.age}}
+            </td>
+        
+            <td class="is-vcentered">
+                <span class="has-text-weight-bold">de&nbsp;{{horaire.horaireDebut}}<br />à&nbsp;{{horaire.horaireFin}}</span>
+            </td>
+            </tr>
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
 </table>
-
-<div>
-    <p class="is-size-2">Salle</p>
-    <div class="columns">
-        <div class="column is-8">
-            <figure class="image is-16by9">
-                <img src="/images/salledudouvez-small.webp">
-            </figure>
-        </div>
-    </div>
-    <p class="has-text-weight-bold">
-        Salle du Douvez <br /> à Guipavas
-    </p>
-    <div class="level">
-        <span class="level-left">
-            <span class="level-item">Voir la carte</span>
-            <span class="level-item">
-                <a class="button is-rounded " target="_blank"
-                    href="https://www.google.com/maps/place/Salle+Du+Douvez/@48.4149772,-4.3516743,17.75z/data=!4m12!1m6!3m5!1s0x4816b13dc52de413:0xd2971dd8c40ca1e8!2sSalle+Du+Douvez!8m2!3d48.414921!4d-4.3503759!3m4!1s0x4816b13dc52de413:0xd2971dd8c40ca1e8!8m2!3d48.414921!4d-4.3503759">
-                    <span class="icon">
-                        <i class="fas fa-map-pin"></i>
-                    </span>
-                </a>
-            </span>
-        </span>
-    </div>
-</div>

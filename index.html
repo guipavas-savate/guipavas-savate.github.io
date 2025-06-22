@@ -10,27 +10,55 @@ order: 1
 <section data-title="Club">
     <div class="hero">
         <div class="hero-body">
-               
-                <div class="content">
-                    <p>
-                        <b>Guipavas Savate</b> est un club de Savate Boxe Française inscrit à la 
-                        Fédération Française de Savate Boxe Française et Disciplines Associées (F.F.S.B.F & D.A.)
-                        qui propose des cours de Savate et du Cardio-Boxing.
-                    </p>
-                    
-                </div>
+
+            <div class="content">
+                <p>
+                    <b>Guipavas Savate</b> est un club de Savate Boxe Française inscrit à la
+                    Fédération Française de Savate Boxe Française et Disciplines Associées (F.F.S.B.F & D.A.)
+                    qui propose des cours de Savate et du Cardio-Boxing.
+                </p>
+
+            </div>
         </div>
     </div>
 </section>
 
-<div class="columns is-centered">
+<div class="columns is-centered is-multiline">
     <div class="column is-half">
-    {% assign post = site.posts | first %}
-    {% include post_card.html %}
+        {% assign post = site.posts | first %}
+        {% include post_card.html %}
     </div>
     <div class="column is-half">
         {% include horaires_grand.html %}
     </div>
 </div>
 
+<div class="content is-centered">
+    <div>
+        <p class="is-size-2">Salle</p>
+        <div class="columns">
+            <div class="column is-8">
+                <figure class="image is-16by9">
+                    <img src="/images/salledudouvez-small.webp">
+                </figure>
+            </div>
+        </div>
+        <p class="has-text-weight-bold">
+            Salle du Douvez <br /> à Guipavas
+        </p>
+        <div class="level">
+            <span class="level-left">
+                <span class="level-item">Voir la carte</span>
+                <span class="level-item">
+                    <a class="button is-rounded " target="_blank"
+                        href="https://www.google.com/maps/place/Salle+Du+Douvez/@48.4149772,-4.3516743,17.75z/data=!4m12!1m6!3m5!1s0x4816b13dc52de413:0xd2971dd8c40ca1e8!2sSalle+Du+Douvez!8m2!3d48.414921!4d-4.3503759!3m4!1s0x4816b13dc52de413:0xd2971dd8c40ca1e8!8m2!3d48.414921!4d-4.3503759">
+                        <span class="icon">
+                            <i class="fas fa-map-pin"></i>
+                        </span>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </div>
 
+</div>

@@ -4,7 +4,7 @@
     age: 15 ans et plus
     niveau: Tous Niveaux
     horaireDebut: 18h30
-    horeaireFin: 20h30
+    horaireFin: 20h30
     ecole: false
     note: ""
 
@@ -14,7 +14,7 @@
     age: 15 ans et plus
     niveau: Tous Niveaux
     horaireDebut: 18h30
-    horeaireFin: 19h30
+    horaireFin: 19h30
     ecole: false
     note: ""
   
@@ -24,7 +24,7 @@
     age: de 6 ans à 10 ans
     niveau: Tous Niveaux
     horaireDebut: 14h00
-    horeaireFin: 15h15
+    horaireFin: 15h15
     ecole: true
     note: ""
     
@@ -33,7 +33,7 @@
     age: de 11 ans à 14 ans
     niveau: Tous Niveaux
     horaireDebut: 15h30
-    horeaireFin: 17h00
+    horaireFin: 17h00
     ecole: true
     note: ""
 
@@ -42,7 +42,7 @@
     age: 15 ans et plus
     niveau: Tous Niveaux
     horaireDebut: 17h15
-    horeaireFin: 18h45
+    horaireFin: 18h45
     ecole: false
     note: ""
 
@@ -51,7 +51,7 @@
     age: 15 ans et plus
     niveau: Débutants
     horaireDebut: 17h15
-    horeaireFin: 18h45
+    horaireFin: 18h45
     ecole: false
     note: ""
 
@@ -61,7 +61,7 @@
     age: 15 ans et plus
     niveau: Confirmés
     horaireDebut: 18h30
-    horeaireFin: 20h30
+    horaireFin: 20h30
     ecole: false
     note: ""
 
@@ -71,7 +71,7 @@
     age: à partir de 6 ans
     niveau: Tous Niveaux
     horaireDebut: 18h00
-    horeaireFin: 19h00
+    horaireFin: 19h00
     ecole: true
     note: "Nouveau"
 
@@ -81,6 +81,6 @@
     age: à partir de 10 ans
     niveau: Développement, Compétitions
     horaireDebut: 9h30
-    horeaireFin: 11h00
+    horaireFin: 11h00
     ecole: false
     note: ""

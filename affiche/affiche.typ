@@ -99,7 +99,7 @@
     ])
     cells.push([
       de #element.horaireDebut \ 
-      à #element.horeaireFin
+      à #element.horaireFin
     ])
     cells.push(table.hline(start: 0))
   }
