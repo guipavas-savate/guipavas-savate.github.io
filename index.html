@@ -25,12 +25,16 @@ order: 1
 
 <div class="columns is-centered is-multiline">
     <div class="column is-half">
+        <h1 class="title">Horaires</h1>
+        {% include horaires_grand.html %}
+    </div>
+    
+    <div class="column is-half">
+        <h1 class="title">Actualités</h1>
         {% assign post = site.posts | first %}
         {% include post_card.html %}
     </div>
-    <div class="column is-half">
-        {% include horaires_grand.html %}
-    </div>
+    
 </div>
 
 <div class="content is-centered">
