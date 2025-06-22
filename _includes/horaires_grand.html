@@ -11,7 +11,11 @@
     {% for jours in site.data.horaires %}
         {% for jour in jours %}
             <tr>
-            <th rowspan="{{ jour[1] | size }}" class="is-size-4 is-vcentered">{{jour[0]}}</th>
+            <th 
+                rowspan="{{ jour[1] | size }}" 
+                class="is-size-4 is-size-6-mobile is-vcentered">
+                    {{jour[0]}}
+            </th>
         
             {% for horaire in jour[1] %}
             <td class="is-vcentered">
