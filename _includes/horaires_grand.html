@@ -29,7 +29,7 @@
                     {% when "Anglaise" %}
                         {% assign dTag = "is-danger" %}
                     {% endcase %}
-                    <span class="tag is-large is-rounded {{dTag}}">{{horaire.discipline}}</span>
+                    <span class="tag is-large- is-rounded {{dTag}} has-text-weight-bold">{{horaire.discipline}}</span>
                     
                     {% assign niveaux = horaire.niveau | split: ", " %}
                     {% for niveau in niveaux %}
@@ -42,7 +42,7 @@
                         {% when "Confirmés", "Compétitions" %}
                             {% assign nTag = "is-danger" %}
                         {% endcase %}
-                        <span class="tag is-medium is-rounded {{nTag}} is-light">{{ niveau }}</span>
+                        <span class="tag is-medium- is-rounded {{nTag}} is-light">{{ niveau }}</span>
                     {% endfor %}
                 </div>
             </td>
