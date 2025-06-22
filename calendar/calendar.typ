@@ -1,6 +1,6 @@
 #import "@preview/cades:0.3.0": qr-code
 
-#let source = yaml.decode(read("../_data/calendar.yml"))
+#let source = yaml("../_data/calendar.yml")
 
 #let calendarHeader(calendar, ) = {
   grid(

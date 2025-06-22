@@ -1,0 +1,86 @@
+- Lundi:
+  - discipline: Savate
+    public: Adultes
+    age: 15 ans et plus
+    niveau: Tous Niveaux
+    horaireDebut: 18h30
+    horeaireFin: 20h30
+    ecole: false
+    note: ""
+
+- Mardi:
+  - discipline: CardioBoxing
+    public: Adultes
+    age: 15 ans et plus
+    niveau: Tous Niveaux
+    horaireDebut: 18h30
+    horeaireFin: 19h30
+    ecole: false
+    note: ""
+  
+- Mercredi:
+  - discipline: Savate
+    public: Enfants
+    age: de 6 ans à 10 ans
+    niveau: Tous Niveaux
+    horaireDebut: 14h00
+    horeaireFin: 15h15
+    ecole: true
+    note: ""
+    
+  - discipline: Savate
+    public: Adolescents
+    age: de 11 ans à 14 ans
+    niveau: Tous Niveaux
+    horaireDebut: 15h30
+    horeaireFin: 17h00
+    ecole: true
+    note: ""
+
+  - discipline: Anglaise
+    public: Adultes
+    age: 15 ans et plus
+    niveau: Tous Niveaux
+    horaireDebut: 17h15
+    horeaireFin: 18h45
+    ecole: false
+    note: ""
+
+  - discipline: Savate
+    public: Adultes
+    age: 15 ans et plus
+    niveau: Débutants
+    horaireDebut: 17h15
+    horeaireFin: 18h45
+    ecole: false
+    note: ""
+
+- Jeudi:
+  - discipline: Savate
+    public: Adultes
+    age: 15 ans et plus
+    niveau: Confirmés
+    horaireDebut: 18h30
+    horeaireFin: 20h30
+    ecole: false
+    note: ""
+
+- Vendredi:
+  - discipline: Anglaise
+    public: Tous Publics
+    age: à partir de 6 ans
+    niveau: Tous Niveaux
+    horaireDebut: 18h00
+    horeaireFin: 19h00
+    ecole: true
+    note: "Nouveau"
+
+- Samedi:
+  - discipline: Savate
+    public: Tous Publics
+    age: à partir de 10 ans
+    niveau: Développement, Compétitions
+    horaireDebut: 9h30
+    horeaireFin: 11h00
+    ecole: false
+    note: ""
