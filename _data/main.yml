@@ -15,8 +15,24 @@ contacts:
 
 
 photos:
+  - src: images/photos/milles-gants-2025.webp
+    description: Le groupe de boxeurs de Guipavas au Tournoi des Milles-Gants 2025.
+  - src: images/photos/championnat-france-2025.webp
+    description: Le groupe de boxeurs et entraineur de Guipavas au Championnat Jeunes du France 2025.
+  - src: images/photos/championnat-zone-ouest-2025.webp
+    description: Les jeunes boxeurs et juge arbritres de Guipavas au Championnat Jeunes de Zone 2025.
+  - src: images/photos/championnat-zone-ouest-2025.webp
+    description: Les jeunes boxeurs et juge arbritres de Guipavas au Championnat Jeunes de Zone 2025.
+  - src: images/photos/championnat-veteran-2025.webp
+    description: Les champions du club de Guipavas au Championnat de France Vétérans 2025.
+  - src: images/photos/championnat-bretagne-2025.webp
+    description: Les jeunes boxeurs de Guipavas au Championnat Jeunes de Bretagne 2025.
+  - src: images/photos/open-finistere-2025.webp
+    description: Le club de Guipavas à accueilli l'Open du Finistère 2025. 
+  - src: images/photos/championnat-finistere-2025.webp
+    description:  Le groupe de boxeurs et entraineurs de Guipavas au Championnat Jeunes du Finistère 2025.
   - src: images/photos/championnat-jeune-finistere-2023-1.jpeg
-    description: Le groupe de boxeurs et entraineur de Guipavas au championnat jeunes à Lesneven en 2023.
+    description: Le groupe de boxeurs et entraineurs de Guipavas au championnat jeunes à Lesneven en 2023.
   - src: images/photos/championnat-jeune-finistere-2023-2.jpeg
     description: Sylain prépare les boxeurs pour la compétition.
   - src: images/photos/milles-gants-2022-2.jpg
