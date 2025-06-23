@@ -50,8 +50,8 @@
     public: Adultes
     age: 15 ans et plus
     niveau: Débutants
-    horaireDebut: 17h15
-    horaireFin: 18h45
+    horaireDebut: 19h00
+    horaireFin: 20h30
     ecole: false
     note: ""
 
@@ -78,7 +78,7 @@
 - Samedi:
   - discipline: Savate
     public: Tous Publics
-    age: à partir de 10 ans
+    age: à partir de 11 ans
     niveau: Développement, Compétitions
     horaireDebut: 9h30
     horaireFin: 11h00
