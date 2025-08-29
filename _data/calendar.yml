@@ -1,68 +1,60 @@
-title: Calendrier 2025
+title: Saison 2025-2026
 months:
-    - title: Février
+    - title: Octobre
       color: "#2ecc40"
       events:
-        - date: Dimanche 23
-          name: Regroupement Compétiteurs de **Ligue**
-          place: Plomodierne
-    - title: Mars
+        - date: Lundi 20
+          name: Forclusion Open Combat
+          place: --
+    - title: Novembre
       color: "#ff4136"
       events:
-        - date: Samedi 8
-          name: Sélection Ligue de Cadets à Vétérans
-          place: Morlaix
-        - date: Samedi 8
-          name: Nuit de la Savateuse
-          place: Morlaix
-        - date: Dimanche 16
-          name: "*Open du Finistère*"
-          place: Guipavas
-        - date: Dimanche 23
-          name: Sélection Ligue Benjamins/Minimes
-          place: Lesneven
-        - date: Dimanche 30
-          name: Regroupement Benjamins/Minices **Ligue**
-          place: _À déterminer_
-    - title: Avril
+        - date: 15 et 16
+          name: Open Combat
+          place: --
+        - date: Lundi 24
+          name: Forclusion 2ième série
+          place: --
+        - date: Jeudi 27
+          name: TAS S2
+          place: --
+    - title: Décembre
       color: "#0074d9"
       events:
-        - date: 5 et 6
-          name: UC 3
-          place: Plomodierne
-        - date: Samedi 19
-          name: Open de Bretagne
-          place: Crozon
-        - date: 26 et 27
-          name: Championnat Juniors et Sénior
-          place: Salle Carpentier à Paris
-    - title: Mai
+        - date: 6 et 7
+          name: Tour de Poule Championnats \ 2ième série (tous)
+          place: --
+        - date: 20 et 21
+          name: Tour de Poule Championnats \ 2ième série (tous)
+          place: --
+    - title: Janvier
       color: "#2ecc40"
       events:
-        - date: 10 et 11
-          name: Championnat Vétérans
-          place: Le Portel (62)
-        - date: 17 et 18
-          name: Championnat Cadet
-          place: Albertville (73)
-        - date: 24 et 25
-          name: Open Nationnal
-          place: Le Puy en Velay (43)
-        - date: 31 et 1 juin
-          name: Sélection Zones Jeunes
-          place: A Monts (37)
-    - title: Juin
+        - date: Samedi 10
+          name: Demi Finales Championnats \ 2ième série Séniors
+          place: --
+        - date: Samedi 10
+          name: Demi Finales Championnats \ 2ième série Espoirs et premium
+          place: --
+        - date: Samedi 24
+          name: Finales \ 2ième série Séniors
+          place: --
+        - date: Lundi 26
+          name: Forclusion \ Elite A et B
+          place: --
+        - date: Samedi 31
+          name: Finales \ 2ième série Espoirs et premium
+          place: --
+    - title: Février
       color: "#ff4136"
       events:
-        - date: 7 et 8
-          name: Championnat Jeunes
-          place: Melun (77)
-        - date: "Dimanche 15"
-          name: Tournoi des Milles Gants
-          place: _à définir_
-        - date: Dimanche 15
-          name: Examen du Monitorat
-          place: Plescop
-        - date: 27, 28 et 29
-          name: "*Stage Cohésion du Club*"
-          place: Mahalon
+        - date: Lundi 2
+          name: Forclusion Juniors
+          place: --
+        - date: 14 et 15
+          name: Tour de Poule \ Elite B, Juniors, 1/8 Elite A
+          place: --
+        - date: 28 et 1 mars
+          name: Tour de Poule \ Elite B, Juniors, 1/4 Elite A
+          place: --
+
