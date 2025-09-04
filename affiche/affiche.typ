@@ -3,7 +3,7 @@
 #set page(margin: (top: 3mm, bottom: 3mm, right: 5mm, left: 5mm))
 
 #set align(center)
-#set text(font: "Avenir", size: 14pt)
+#set text(font: "Avenir", size: 15pt)
 #set par(spacing: 10pt)
 
 #table(
@@ -16,9 +16,13 @@
   image("../images/logo-rond.png"),
 )
 
+#v(1fr)
+
 #underline(
   text(size: 32pt, weight: "extrabold")[Savate Boxe Française]
 )
+
+#v(1fr)
 
 #let jour(content) = text(size: 20pt, weight: "extrabold", content)
 
@@ -33,7 +37,7 @@
   }
   box(
     fill: color, radius: 4mm, inset: 2mm, 
-    text(weight: "bold", str)
+    text(size: 12pt, weight: "bold", str)
   )
 }
 
@@ -75,7 +79,7 @@
       columns.push(auto)
       cells2.push(table.cell(rowspan: 2, box(
         fill: aqua, radius: 6mm, inset: 3mm, 
-        text(weight: "bold", note)
+        text(size: 12pt, weight: "bold", note)
       )))
     }
     if element.ecole {
@@ -114,11 +118,13 @@
   ..cells
 )
 
+#v(1fr)
 
-#set text(size: 22pt)
- 
+#set text(size: 22pt) 
 #text(size: 32pt, weight: "extrabold")[Salle du Douvez à Guipavas] \
 #text(fill: blue, weight: "extralight")[Ethique - Esthétique - Efficace - Educative] \ 
+  
+#v(1fr)
 
 #table(
   columns: (1fr, 3fr, 1fr),
@@ -127,10 +133,8 @@
   stroke: none,
   qr-code("https://www.guipavas-savate.fr"),
   [
-  Contact: Sylvain Le Stanc \
-  06 61 56 08 83 \
+  Sylvain Le Stanc: 06 61 56 08 83 \
   #underline[guipavas.savate\@hotmail.com] \
-  \@guipavas_savate \
   #underline[https://www.guipavas-savate.fr]
   ],
   image("../images/logo-ffsavate.jpg"),
