@@ -7,7 +7,7 @@ months:
           name: Actualisation des arbitres
           place: Saint Thegonnec
         - date: "Dimanche 12"
-          name: "Regroupement \n compétiteurs A et B"
+          name: "Regroupement \\ compétiteurs A et B"
           place: Lesneven
     - title: Novembre
       color: "#ff4136"
@@ -18,12 +18,12 @@ months:
     - title: Décembre
       color: "#0074d9"
       events:
-        - date: "14"
-          name: "Regroupement \n compétiteurs A et B"
-          place: Guipavas
+        - date: "Dimanche 14"
+          name: "*Regroupement \\ compétiteurs A et B*"
+          place: "*Guipavas*"
         - date: "21"
-          name: Repas Club
-          place: "Guipavas \n Salle du Douvez"
+          name: "*Repas Club*"
+          place: "*Guipavas* \\ Salle du Douvez"
     - title: Janvier
       color: "#2ecc40"
       events:
@@ -36,8 +36,8 @@ months:
     - title: Février
       color: "#ff4136"
       events:
-        - date: Dimanche 1
-          name: Regroupement compétiteurs A
+        - date: "Dimanche 1"
+          name: "Regroupement compétiteurs A"
           place: Morlaix
         - date: Dimanche 8
           name: Championnat Avenir 
@@ -45,15 +45,15 @@ months:
     - title: Mars
       color: "#0074d9"
       events:
-        - date: Dimanche 1 ou 15
-          name: Open du Finistère
-          place: Guipavas
+        - date: "*Dimanche 1 ou 15*"
+          name: "*Open du Finistère*"
+          place: "*Guipavas*"
         - date: Dimanche 8
           name: "Championnat Cadet \n et Vétérans Bretagne"
           place: Crozon
         - date: Dimanche 22
           name: "Interclub pré-poussin et poussin"
-          place: Morlais
+          place: Morlaix
     - title: Avril
       color: "#2ecc40"
       events:
