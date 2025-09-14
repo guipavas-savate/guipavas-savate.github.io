@@ -1,60 +1,74 @@
 title: Saison 2025-2026
 months:
-    - title: Octobre
+    - title: "Octobre"
       color: "#2ecc40"
       events:
-        - date: Lundi 20
-          name: Forclusion Open Combat
-          place: --
+        - date: "Dimanche 5"
+          name: Actualisation des arbitres
+          place: Saint Thegonnec
+        - date: "Dimanche 12"
+          name: "Regroupement \n compétiteurs A et B"
+          place: Lesneven
     - title: Novembre
       color: "#ff4136"
       events:
-        - date: 15 et 16
-          name: Open Combat
-          place: --
-        - date: Lundi 24
-          name: Forclusion 2ième série
-          place: --
-        - date: Jeudi 27
-          name: TAS S2
-          place: --
+        - date: "Dimanche 9"
+          name: Regroupement compétiteurs A
+          place: Crozon
     - title: Décembre
       color: "#0074d9"
       events:
-        - date: 6 et 7
-          name: Tour de Poule Championnats \ 2ième série (tous)
-          place: --
-        - date: 20 et 21
-          name: Tour de Poule Championnats \ 2ième série (tous)
-          place: --
+        - date: "14"
+          name: "Regroupement \n compétiteurs A et B"
+          place: Guipavas
+        - date: "21"
+          name: Repas Club
+          place: "Guipavas \n Salle du Douvez"
     - title: Janvier
       color: "#2ecc40"
       events:
-        - date: Samedi 10
-          name: Demi Finales Championnats \ 2ième série Séniors
-          place: --
-        - date: Samedi 10
-          name: Demi Finales Championnats \ 2ième série Espoirs et premium
-          place: --
-        - date: Samedi 24
-          name: Finales \ 2ième série Séniors
-          place: --
-        - date: Lundi 26
-          name: Forclusion \ Elite A et B
-          place: --
-        - date: Samedi 31
-          name: Finales \ 2ième série Espoirs et premium
-          place: --
+        - date: 11 ou 18
+          name: Gant Jaune
+          place: Crozon
+        - date: Dimanche 25
+          name: "Championnat Finistère \n avenir et cadet"
+          place: Lesneven
     - title: Février
       color: "#ff4136"
       events:
-        - date: Lundi 2
-          name: Forclusion Juniors
-          place: --
-        - date: 14 et 15
-          name: Tour de Poule \ Elite B, Juniors, 1/8 Elite A
-          place: --
-        - date: 28 et 1 mars
-          name: Tour de Poule \ Elite B, Juniors, 1/4 Elite A
-          place: --
-
+        - date: Dimanche 1
+          name: Regroupement compétiteurs A
+          place: Morlaix
+        - date: Dimanche 8
+          name: Championnat Avenir 
+          place: Morlaix
+    - title: Mars
+      color: "#0074d9"
+      events:
+        - date: Dimanche 1 ou 15
+          name: Open du Finistère
+          place: Guipavas
+        - date: Dimanche 8
+          name: "Championnat Cadet \n et Vétérans Bretagne"
+          place: Crozon
+        - date: Dimanche 22
+          name: "Interclub pré-poussin et poussin"
+          place: Morlais
+    - title: Avril
+      color: "#2ecc40"
+      events:
+        - date: Samedi 4
+          name: Open de Bretagne
+          place: ---
+    - title: Mai
+      color: "#ff4136"
+      events:
+        - date: ---
+          name: ---
+          place: ---
+    - title: Juin
+      color: "#0074d9"
+      events:
+        - date: "14"
+          name: Kangourou et 1000 gants
+          place: Roscoff

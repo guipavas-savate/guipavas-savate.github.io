@@ -28,10 +28,10 @@
   block(breakable: false, above: 1cm)[
     #monthTitle(color: month.color, month.title)
     #grid(
-      columns: (auto,1fr,auto), inset: .3cm, 
+      columns: (auto,2fr,1fr), inset: .3cm, 
       align: (horizon+left, horizon+center, horizon+right),
 
-      ..month.events.map(extractFields).flatten().map(toMarkup)
+      ..month.events.map(extractFields).flatten()//.map(toMarkup)
     )
   ]
 }
