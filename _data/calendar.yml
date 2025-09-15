@@ -7,7 +7,7 @@ months:
           name: Actualisation des arbitres
           place: Saint Thegonnec
         - date: "Dimanche 12"
-          name: "Regroupement \\ compétiteurs A et B"
+          name: "Regroupement \n\n compétiteurs A et B"
           place: Lesneven
     - title: Novembre
       color: "#ff4136"
@@ -18,12 +18,12 @@ months:
     - title: Décembre
       color: "#0074d9"
       events:
-        - date: "Dimanche 14"
-          name: "*Regroupement \\ compétiteurs A et B*"
-          place: "*Guipavas*"
-        - date: "21"
-          name: "*Repas Club*"
-          place: "*Guipavas* \\ Salle du Douvez"
+        - date: "**Dimanche 14**"
+          name: "**Regroupement** \n\n **compétiteurs A et B**"
+          place: "**Guipavas**"
+        - date: "Dimanche 21"
+          name: "**Repas Club**"
+          place: "**Guipavas** \n\n Salle du Douvez"
     - title: Janvier
       color: "#2ecc40"
       events:
@@ -31,7 +31,7 @@ months:
           name: Gant Jaune
           place: Crozon
         - date: Dimanche 25
-          name: "Championnat Finistère \n avenir et cadet"
+          name: "Championnat Finistère \n\n avenir et cadet"
           place: Lesneven
     - title: Février
       color: "#ff4136"
@@ -45,27 +45,27 @@ months:
     - title: Mars
       color: "#0074d9"
       events:
-        - date: "*Dimanche 1 ou 15*"
-          name: "*Open du Finistère*"
-          place: "*Guipavas*"
+        - date: "**Dimanche 1 ou 15**"
+          name: "**Open du Finistère**"
+          place: "**Guipavas**"
         - date: Dimanche 8
-          name: "Championnat Cadet \n et Vétérans Bretagne"
+          name: "Championnat Cadet \n\n et Vétérans Bretagne"
           place: Crozon
         - date: Dimanche 22
-          name: "Interclub pré-poussin et poussin"
+          name: "Interclub \n\n pré-poussin et poussin"
           place: Morlaix
     - title: Avril
       color: "#2ecc40"
       events:
-        - date: Samedi 4
-          name: Open de Bretagne
-          place: ---
+        - date: "Samedi 4"
+          name: "Open de Bretagne"
+          place: --
     - title: Mai
       color: "#ff4136"
       events:
-        - date: ---
-          name: ---
-          place: ---
+        - date: --
+          name: --
+          place: --
     - title: Juin
       color: "#0074d9"
       events:

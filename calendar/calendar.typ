@@ -1,4 +1,5 @@
 #import "@preview/cades:0.3.0": qr-code
+#import "@preview/cmarker:0.1.6"
 
 #let source = yaml("../_data/calendar.yml")
 
@@ -22,7 +23,8 @@
 )
 
 #let month(month) = {
-  let toMarkup(str) = eval(str, mode: "markup")
+  //let toMarkup(str) = eval(str, mode: "markup")
+  let toMarkup(str) = cmarker.render(str)
   let extractFields((date, name, place))= (date, name, place)
 
   block(breakable: false, above: 1cm)[

@@ -11,7 +11,12 @@ order: 3
     (<a href="calendar/calendar_a4.pdf">pdf</a>)
 </h1>
 
+<div class="columns is-multiline">
+
 {% for month in site.data.calendar.months %}
+
+<div class="column is-half">
+
 <h2 style="background-color: {{ month.color }};" id="{{ month.title | slugify }}" class="subtitle is-2 has-text-centered has-text-weight-bold has-text-white">{{ month.title }}</h2>
 
 <table class="table is-fullwidth">
@@ -24,4 +29,8 @@ order: 3
 {% endfor %}
 </table>
 
+</div>
+
 {% endfor %}
+
+</div>
