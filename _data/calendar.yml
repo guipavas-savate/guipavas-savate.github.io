@@ -60,15 +60,27 @@ months:
         - date: "Samedi 4"
           name: "Open de Bretagne"
           place: --
+        - date: "25 et 26"
+          name: "Championnat Assaut \n\n *forclusion 6 avril*"
+          place: --
     - title: Mai
       color: "#ff4136"
       events:
-        - date: --
-          name: --
+        - date: "2 et 3" 
+          name: "Championnat Cadet"
+          place: --
+        - date: "9 et 10" 
+          name: "Open Assaut \n\n *forclusion 20 avril*"
+          place: --
+        - date: "23 et 24" 
+          name: "Championnat Avenir \n\n Finales Assaut"
           place: --
     - title: Juin
       color: "#0074d9"
       events:
+        - date: "5, 6 et 7"
+          name: "**Weekend Club**"
+          place: "**Mahalon**"
         - date: "Dimanche 14"
           name: Kangourou et 1000 gants
           place: Roscoff
