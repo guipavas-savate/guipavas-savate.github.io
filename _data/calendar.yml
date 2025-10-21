@@ -18,11 +18,14 @@ months:
     - title: Décembre
       color: "#0074d9"
       events:
-        - date: "**Dimanche 14**"
+        - date: "**Dimanche 7**"
           name: "**Regroupement** \n\n **compétiteurs A et B**"
           place: "**Guipavas**"
-        - date: "Dimanche 21"
+        - date: "Samedi 13"
           name: "**Repas Club**"
+          place: "**Guipavas** \n\n Salle du Douvez"
+        - date: "Samedi 20"
+          name: "**Echanche Kali-Escrima**"
           place: "**Guipavas** \n\n Salle du Douvez"
     - title: Janvier
       color: "#2ecc40"
