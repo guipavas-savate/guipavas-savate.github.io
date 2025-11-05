@@ -1,6 +1,7 @@
 title: Saison 2025-2026
 months:
     - title: "Octobre"
+      number: 10
       color: "#2ecc40"
       events:
         - date: "Dimanche 5"
@@ -10,24 +11,39 @@ months:
           name: "Regroupement \n\n compétiteurs A et B"
           place: Lesneven
     - title: Novembre
+      number: 11
       color: "#ff4136"
       events:
         - date: "Dimanche 2"
           name: Regroupement compétiteurs A
           place: Crozon
+        - date: "Vendredi 21"
+          name: "Entrainement Anglaise \n\n enfants 6 à 10 ans"
+          place: "Guipavas \n\n **Kerafloch**"
     - title: Décembre
+      number: 12
       color: "#0074d9"
       events:
+        - date: "Vendredi 5"
+          name: "Entrainement Anglaise \n\n ados et adultes à partir de 11 ans"
+          place: "Guipavas \n\n **Kerafloch**"
         - date: "**Dimanche 7**"
-          name: "**Regroupement** \n\n **compétiteurs A et B**"
-          place: "**Guipavas**"
-        - date: "Samedi 13"
-          name: "**Repas Club**"
+          name: "**Regroupement** \n\n **compétiteurs A et B** \n\n à partir de minimes."
           place: "**Guipavas** \n\n Salle du Douvez"
+        - date: "Vendredi 12"
+          name: "Tournoi Anglaise \n\n enfants 6 à 10 ans"
+          place: "Guipavas \n\n **Kerafloch**"
+        - date: "**Samedi 13**"
+          name: "**Repas Club** à 16 heures \n\n  à 14 heures pour installer"
+          place: "**Guipavas** \n\n Salle du Douvez"
+        - date: "Vendredi 19"
+          name: "Tournoi Anglaise \n\n ados et adultes à partir de 11 ans"
+          place: "Guipavas \n\n **Salle du Douvez**"
         - date: "Samedi 20"
-          name: "**Echanche Kali-Escrima**"
+          name: "**Échanche Kali-Escrima** \n\n Don de jouets (neuf ou occasion)"
           place: "**Guipavas** \n\n Salle du Douvez"
     - title: Janvier
+      number: 1
       color: "#2ecc40"
       events:
         - date: 11 ou 18
@@ -37,6 +53,7 @@ months:
           name: "Championnat Finistère \n\n avenir et cadet"
           place: Lesneven
     - title: Février
+      number: 2
       color: "#ff4136"
       events:
         - date: "Dimanche 1"
@@ -46,6 +63,7 @@ months:
           name: Championnat Avenir 
           place: Morlaix
     - title: Mars
+      number: 3
       color: "#0074d9"
       events:
         - date: "**Dimanche 1 ou 15**"
@@ -58,6 +76,7 @@ months:
           name: "Interclub \n\n pré-poussin et poussin"
           place: Morlaix
     - title: Avril
+      number: 4
       color: "#2ecc40"
       events:
         - date: "Samedi 4"
@@ -67,6 +86,7 @@ months:
           name: "Championnat Assaut \n\n *forclusion 6 avril*"
           place: --
     - title: Mai
+      number: 5
       color: "#ff4136"
       events:
         - date: "2 et 3" 
@@ -79,6 +99,7 @@ months:
           name: "Championnat Avenir \n\n Finales Assaut"
           place: --
     - title: Juin
+      number: 6
       color: "#0074d9"
       events:
         - date: "5, 6 et 7"

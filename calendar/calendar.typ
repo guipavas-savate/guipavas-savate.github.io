@@ -1,11 +1,11 @@
-#import "@preview/cades:0.3.0": qr-code
+#import "@preview/tiaoma:0.3.0"
 #import "@preview/cmarker:0.1.6"
 
 #let source = yaml("../_data/calendar.yml")
 
 #let calendarHeader(calendar, ) = {
   grid(
-    columns: (1fr, 2fr, 1fr,), 
+    columns: (1fr, 2fr, 1fr), 
     align: horizon+center,
     image("../images/logo-rond.png"), 
     block[
@@ -13,7 +13,7 @@
       #v(.3cm)
       #align(center, underline(text(size: 18pt, weight: "bold",calendar.title)))
     ], 
-    qr-code("https://www.guipavas-savate.fr/calendrier.html"),
+    tiaoma.qrcode("https://www.guipavas-savate.fr/calendrier.html", options: (scale: 3.0)),
   )
 }
 
@@ -38,7 +38,7 @@
   ]
 }
 
-#let calendarA4(source) = {
+#let calendarA4(source, start: none) = {
   set page(
     paper: "a4", flipped: true,
     margin: (top: 5cm, left: .5cm, right: .5cm, bottom: .5cm),
@@ -52,12 +52,16 @@
 
   set text(13pt)
 
+
+  let print = start == none
   for monthData in source.months {
-    month(monthData)
+    if start != none and monthData.number == start { print = true }
+    if print { month(monthData) }
   }
+
 }
 
-#let calendarA5(source) = {
+#let calendarA5(source, start: none) = {
     set page(
     paper: "a5",
     margin: (top: 5cm, left: .5cm, right: .5cm, bottom: .5cm),
@@ -71,13 +75,15 @@
 
   set text(13pt)
 
+  let print = start == none
   for monthData in source.months {
-    month(monthData)
+    if start != none and monthData.number == start { print = true }
+    if print { month(monthData) }
   }
 }
 
 
-#let calendarHtml(source) = {
+#let calendarHtml(source, start: none) = {
   /*
     set page(
     paper: "a5",
@@ -92,7 +98,10 @@
 
   set text(13pt)
 
+  let print = start == none
   for monthData in source.months {
-    month(monthData)
+    if start != none and monthData.number == start { print = true }
+    if print { month(monthData) }
   }
+
 }
