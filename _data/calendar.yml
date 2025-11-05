@@ -21,7 +21,8 @@ months:
           place: Crozon
         - date: "Vendredi 21"
           number: 21
-          name: "Entrainement Anglaise \n\n enfants 6 à 10 ans"
+          name: "Entrainement Anglaise"
+          info: "enfants 6 à 10 ans"
           place: "Guipavas \n\n **Kerafloch**"
     - title: Décembre
       number: 12
@@ -29,27 +30,33 @@ months:
       events:
         - date: "Vendredi 5"
           number: 5
-          name: "Entrainement Anglaise \n\n ados et adultes à partir de 11 ans"
+          name: "Entrainement Anglaise"
+          info: "ados et adultes à partir de 11 ans"
           place: "Guipavas \n\n **Kerafloch**"
         - date: "**Dimanche 7**"
           number: 7
-          name: "**Regroupement compétiteurs A et B** \n\n à partir de minimes."
+          name: "**Regroupement compétiteurs A et B**"
+          info: "à partir de minimes."
           place: "**Guipavas** \n\n Salle du Douvez"
         - date: "Vendredi 12"
           number: 12
-          name: "Tournoi Anglaise \n\n enfants 6 à 10 ans"
+          name: "Tournoi Anglaise"
+          info: "enfants 6 à 10 ans"
           place: "Guipavas \n\n **Kerafloch**"
         - date: "**Samedi 13**"
           number: 13
-          name: "**Démonstration et Repas Club** \n\n à 16 heure (mise en place à 14h)"
+          name: "**Démonstration et Repas Club**"
+          info: "à 16 heure (mise en place à 14 heure)"
           place: "**Guipavas** \n\n Salle du Douvez"
         - date: "Vendredi 19"
           number: 19
-          name: "Tournoi Anglaise \n\n ados et adultes à partir de 11 ans"
+          name: "Tournoi Anglaise"
+          info: "ados et adultes à partir de 11 ans"
           place: "Guipavas \n\n **Salle du Douvez**"
         - date: "Samedi 20"
           number: 20
-          name: "**Échange Kali-Escrima** \n\n Don de jouets (neuf ou occasion)"
+          name: "**Échange Kali-Escrima**"
+          info: "Don de jouets (neuf ou d'occasion)"
           place: "**Guipavas** \n\n Salle du Douvez"
     - title: Janvier
       number: 1
@@ -61,7 +68,8 @@ months:
           place: Crozon
         - date: Dimanche 25
           number: 25
-          name: "Championnat Finistère \n\n avenir et cadet"
+          name: "Championnat Finistère"
+          info: "Avenir et Cadet"
           place: Lesneven
     - title: Février
       number: 2
@@ -85,11 +93,13 @@ months:
           place: "**Guipavas**"
         - date: Dimanche 8
           number: 8
-          name: "Championnat Cadet \n\n et Vétérans Bretagne"
+          name: "Championnat Cadet et Vétérans"
+          info: "Bretagne"
           place: Crozon
         - date: Dimanche 22
           number: 22
-          name: "Interclub \n\n pré-poussin et poussin"
+          name: "Interclub"
+          info: "pré-poussin et poussin"
           place: Morlaix
     - title: Avril
       number: 4
@@ -102,7 +112,8 @@ months:
           place: --
         - date: "25 et 26"
           number: 25
-          name: "Championnat Assaut \n\n *forclusion 6 avril*"
+          name: "Championnat Assaut"
+          info: "forclusion 6 avril"
           place: --
     - title: Mai
       number: 5
@@ -114,11 +125,13 @@ months:
           place: --
         - date: "9 et 10" 
           number: 9
-          name: "Open Assaut \n\n *forclusion 20 avril*"
+          name: "Open Assaut"
+          info: "forclusion 20 avril"
           place: --
         - date: "23 et 24" 
           number: 23
-          name: "Championnat Avenir \n\n Finales Assaut"
+          name: "Championnat Avenir"
+          info: "Finales Assaut"
           place: --
     - title: Juin
       number: 6
@@ -127,7 +140,7 @@ months:
         - date: "5, 6 et 7"
           number: 5
           name: "**Weekend Club**"
-          place: "**Mahalon**"
+          place: "**--**"
         - date: "Dimanche 14"
           name: Kangourou et 1000 gants
           place: Roscoff

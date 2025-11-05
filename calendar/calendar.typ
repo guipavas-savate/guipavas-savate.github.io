@@ -25,10 +25,20 @@
 #let month(month, start: auto) = {
   //let toMarkup(str) = eval(str, mode: "markup")
   let toMarkup(str) = cmarker.render(str)
-  let extractFields((date, name, place))= (date, name, place)
-
-  let events = month.events
+  
+  let cells = month.events
     .filter(it => { start == auto or start <= it.number })
+    .map( it => (
+      (
+        cmarker.render(it.date), 
+        [
+          #cmarker.render(it.at("name", default: ""))\
+          #text(cmarker.render(it.at("info", default: "")), size: 10pt)
+        ], 
+        cmarker.render(it.place)
+      )
+    ))
+    .flatten()
 
   block(breakable: false, above: 1cm)[
     #monthTitle(color: month.color, month.title)
@@ -37,7 +47,7 @@
       align: (horizon+left, horizon+center, horizon+center),
       fill: (x, y) => if calc.even(y+1) { luma(95%) } else { white },
   
-      ..events.map(extractFields).flatten().map(toMarkup)
+      ..cells
     )
   ]
 }

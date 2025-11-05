@@ -23,7 +23,11 @@ order: 3
 {% for event in month.events %}
 <tr>
     <td class="has-text-left">{{event.date | markdownify }}</td>
-    <td class="has-text-center">{{event.name | markdownify }}</td>
+    <td class="has-text-center">
+        {{event.name | markdownify }}
+        
+        <span class="is-size-6">{{event.info | markdownify }}</span>
+    </td>
     <td class="has-text-right">{{event.place | markdownify }}</td>
 </tr>
 {% endfor %}
