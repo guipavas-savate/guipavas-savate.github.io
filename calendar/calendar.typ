@@ -53,11 +53,14 @@
 
   set text(13pt)
 
-
   let print = start == none
+  v(1fr)
   for monthData in source.months {
     if start != none and monthData.number == start { print = true }
-    if print { month(monthData) }
+    if print { 
+      month(monthData) 
+      v(1fr)
+    }
   }
 
 }
@@ -77,9 +80,13 @@
   set text(13pt)
 
   let print = start == none
+  v(1fr)
   for monthData in source.months {
     if start != none and monthData.number == start { print = true }
-    if print { month(monthData) }
+    if print { 
+      month(monthData) 
+      v(1fr)
+    }
   }
 }
 
