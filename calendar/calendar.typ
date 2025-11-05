@@ -30,7 +30,7 @@
   block(breakable: false, above: 1cm)[
     #monthTitle(color: month.color, month.title)
     #grid(
-      columns: (auto,2fr,auto), inset: .3cm, 
+      columns: (auto,2fr,auto), inset:(2mm,2mm, 2mm), row-gutter: 7mm, 
       align: (horizon+left, horizon+center, horizon+center),
       fill: (x, y) => if calc.even(y+1) { luma(95%) } else { white },
   
@@ -65,10 +65,10 @@
 
 }
 
-#let calendarA5(source, start: none) = {
+#let calendarA5(source, start: none, count: none) = {
     set page(
     paper: "a5",
-    margin: (top: 5cm, left: .5cm, right: .5cm, bottom: .5cm),
+    margin: (top: 4.5cm, left: .5cm, right: .5cm, bottom: .5cm),
     //columns: 2,
     header: calendarHeader(source), header-ascent: .5cm
   )
@@ -77,16 +77,19 @@
     spacing: .1cm
   )
 
-  set text(13pt)
+  set text(12pt)
 
   let print = start == none
+  let printed = 0
   v(1fr)
   for monthData in source.months {
     if start != none and monthData.number == start { print = true }
     if print { 
+      printed = printed + 1
       month(monthData) 
       v(1fr)
     }
+    if count != none and printed >= count { print = false }
   }
 }
 
