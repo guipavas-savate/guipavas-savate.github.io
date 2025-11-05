@@ -22,10 +22,13 @@
   align(center, text(fill: white, stroke:white, size: 12pt, content))
 )
 
-#let month(month) = {
+#let month(month, start: auto) = {
   //let toMarkup(str) = eval(str, mode: "markup")
   let toMarkup(str) = cmarker.render(str)
   let extractFields((date, name, place))= (date, name, place)
+
+  let events = month.events
+    .filter(it => { start == auto or start <= it.number })
 
   block(breakable: false, above: 1cm)[
     #monthTitle(color: month.color, month.title)
@@ -34,15 +37,34 @@
       align: (horizon+left, horizon+center, horizon+center),
       fill: (x, y) => if calc.even(y+1) { luma(95%) } else { white },
   
-      ..month.events.map(extractFields).flatten().map(toMarkup)
+      ..events.map(extractFields).flatten().map(toMarkup)
     )
   ]
 }
 
-#let calendarA4(source, start: none) = {
+#let calendarMonths(source, start: datetime, count: auto) = {
+
+  let print = start == auto
+  let printed = 0
+  v(1fr)
+
+  for monthData in source.months {
+    if start != auto and monthData.number == start.month() { print = true }
+    if print { 
+      printed = printed + 1
+      let startDay = if start.month() == monthData.number { start.day() } else { auto }
+      month(monthData, start: startDay) 
+      v(4mm)
+      v(1fr)
+    }
+    if count != auto and printed >= count { print = false }
+  }
+}
+
+#let calendarA4(source, start: auto, count: auto) = {
   set page(
     paper: "a4", flipped: true,
-    margin: (top: 5cm, left: .5cm, right: .5cm, bottom: .5cm),
+    margin: (top: 4.5cm, left: .5cm, right: .5cm, bottom: .5cm),
     columns: 2,
     header: calendarHeader(source), header-ascent: .5cm
   )
@@ -53,19 +75,10 @@
 
   set text(13pt)
 
-  let print = start == none
-  v(1fr)
-  for monthData in source.months {
-    if start != none and monthData.number == start { print = true }
-    if print { 
-      month(monthData) 
-      v(1fr)
-    }
-  }
-
+  calendarMonths(source, start: start, count: count)
 }
 
-#let calendarA5(source, start: none, count: none) = {
+#let calendarA5(source, start: auto, count: auto) = {
     set page(
     paper: "a5",
     margin: (top: 4.5cm, left: .5cm, right: .5cm, bottom: .5cm),
@@ -78,23 +91,11 @@
   )
 
   set text(12pt)
-
-  let print = start == none
-  let printed = 0
-  v(1fr)
-  for monthData in source.months {
-    if start != none and monthData.number == start { print = true }
-    if print { 
-      printed = printed + 1
-      month(monthData) 
-      v(1fr)
-    }
-    if count != none and printed >= count { print = false }
-  }
+  calendarMonths(source, start: start, count: count)
 }
 
 
-#let calendarHtml(source, start: none) = {
+#let calendarHtml(source, start: auto, count: auto) = {
   /*
     set page(
     paper: "a5",
@@ -109,10 +110,5 @@
 
   set text(13pt)
 
-  let print = start == none
-  for monthData in source.months {
-    if start != none and monthData.number == start { print = true }
-    if print { month(monthData) }
-  }
-
+  calendarMonths(source, start: start, count: count)
 }

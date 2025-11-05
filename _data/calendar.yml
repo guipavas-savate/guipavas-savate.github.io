@@ -5,6 +5,7 @@ months:
       color: "#2ecc40"
       events:
         - date: "Dimanche 5"
+          number: 5
           name: Actualisation des arbitres
           place: Saint Thegonnec
         - date: "Dimanche 12"
@@ -15,9 +16,11 @@ months:
       color: "#ff4136"
       events:
         - date: "Dimanche 2"
+          number: 2
           name: Regroupement compétiteurs A
           place: Crozon
         - date: "Vendredi 21"
+          number: 21
           name: "Entrainement Anglaise \n\n enfants 6 à 10 ans"
           place: "Guipavas \n\n **Kerafloch**"
     - title: Décembre
@@ -25,21 +28,27 @@ months:
       color: "#0074d9"
       events:
         - date: "Vendredi 5"
+          number: 5
           name: "Entrainement Anglaise \n\n ados et adultes à partir de 11 ans"
           place: "Guipavas \n\n **Kerafloch**"
         - date: "**Dimanche 7**"
+          number: 7
           name: "**Regroupement compétiteurs A et B** \n\n à partir de minimes."
           place: "**Guipavas** \n\n Salle du Douvez"
         - date: "Vendredi 12"
+          number: 12
           name: "Tournoi Anglaise \n\n enfants 6 à 10 ans"
           place: "Guipavas \n\n **Kerafloch**"
         - date: "**Samedi 13**"
+          number: 13
           name: "**Démonstration et Repas Club** \n\n à 16 heure (mise en place à 14h)"
           place: "**Guipavas** \n\n Salle du Douvez"
         - date: "Vendredi 19"
+          number: 19
           name: "Tournoi Anglaise \n\n ados et adultes à partir de 11 ans"
           place: "Guipavas \n\n **Salle du Douvez**"
         - date: "Samedi 20"
+          number: 20
           name: "**Échange Kali-Escrima** \n\n Don de jouets (neuf ou occasion)"
           place: "**Guipavas** \n\n Salle du Douvez"
     - title: Janvier
@@ -47,9 +56,11 @@ months:
       color: "#2ecc40"
       events:
         - date: 11 ou 18
+          number: 11
           name: Gant Jaune
           place: Crozon
         - date: Dimanche 25
+          number: 25
           name: "Championnat Finistère \n\n avenir et cadet"
           place: Lesneven
     - title: Février
@@ -57,9 +68,11 @@ months:
       color: "#ff4136"
       events:
         - date: "Dimanche 1"
+          number: 1
           name: "Regroupement compétiteurs A"
           place: Morlaix
         - date: Dimanche 8
+          number: 8
           name: Championnat Avenir 
           place: Morlaix
     - title: Mars
@@ -67,12 +80,15 @@ months:
       color: "#0074d9"
       events:
         - date: "**Dimanche 1 ou 15**"
+          number: 1
           name: "**Open du Finistère**"
           place: "**Guipavas**"
         - date: Dimanche 8
+          number: 8
           name: "Championnat Cadet \n\n et Vétérans Bretagne"
           place: Crozon
         - date: Dimanche 22
+          number: 22
           name: "Interclub \n\n pré-poussin et poussin"
           place: Morlaix
     - title: Avril
@@ -80,9 +96,12 @@ months:
       color: "#2ecc40"
       events:
         - date: "Samedi 4"
+          number: 4
+          number: 4
           name: "Open de Bretagne"
           place: --
         - date: "25 et 26"
+          number: 25
           name: "Championnat Assaut \n\n *forclusion 6 avril*"
           place: --
     - title: Mai
@@ -90,12 +109,15 @@ months:
       color: "#ff4136"
       events:
         - date: "2 et 3" 
+          number: 2
           name: "Championnat Cadet"
           place: --
         - date: "9 et 10" 
+          number: 9
           name: "Open Assaut \n\n *forclusion 20 avril*"
           place: --
         - date: "23 et 24" 
+          number: 23
           name: "Championnat Avenir \n\n Finales Assaut"
           place: --
     - title: Juin
@@ -103,6 +125,7 @@ months:
       color: "#0074d9"
       events:
         - date: "5, 6 et 7"
+          number: 5
           name: "**Weekend Club**"
           place: "**Mahalon**"
         - date: "Dimanche 14"
