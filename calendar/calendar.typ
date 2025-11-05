@@ -33,7 +33,7 @@
         cmarker.render(it.date), 
         [
           #cmarker.render(it.at("name", default: ""))\
-          #text(cmarker.render(it.at("info", default: "")), size: 10pt)
+          #cmarker.render(it.at("info", default: ""))
         ], 
         cmarker.render(it.place)
       )
@@ -83,7 +83,7 @@
     spacing: .1cm
   )
 
-  set text(13pt)
+  set text(12pt)
 
   calendarMonths(source, start: start, count: count)
 }
