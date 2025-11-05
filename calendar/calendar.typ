@@ -32,7 +32,8 @@
     #grid(
       columns: (auto,2fr,auto), inset: .3cm, 
       align: (horizon+left, horizon+center, horizon+center),
-
+      fill: (x, y) => if calc.even(y+1) { luma(95%) } else { white },
+  
       ..month.events.map(extractFields).flatten().map(toMarkup)
     )
   ]
