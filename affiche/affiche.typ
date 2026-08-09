@@ -1,9 +1,9 @@
-#import "@preview/cades:0.3.0": qr-code
+#import "@preview/cades:0.3.1": qr-code
 
 #set page(margin: (top: 3mm, bottom: 3mm, right: 5mm, left: 5mm))
 
 #set align(center)
-#set text(font: "Avenir", size: 15pt)
+#set text(font: "Avenir", size: 14pt)
 #set par(spacing: 10pt)
 
 #table(
@@ -36,13 +36,20 @@
     color = red
   }
   box(
-    fill: color, radius: 4mm, inset: 2mm, 
-    text(size: 12pt, weight: "bold", str)
+    fill: color, radius: 4mm, inset: 2mm,
+    align(right, text(size: 12pt, weight: "bold", str))
   )
 }
 
 #let public(str) = {
   text(weight: "bold", str)
+}
+
+#let note(str) = {
+  box(
+      fill: aqua, radius: 6mm, inset: 3mm, 
+      text(size: 12pt, weight: "bold", str)
+  )
 }
 
 #let savate() = discipline("Savate")
@@ -54,7 +61,7 @@
 #let adolescents() = text(weight: "bold")[Adolescents]
 #let tous() = text(weight: "bold")[Tous Publics]
 
-#let kangourou() = image("../images/Kangourou.png", height: 13mm)
+#let kangourou() = image("../images/Kangourou.png", height: 12mm)
 
 #let horaires = yaml("../_data/horaires.yml")
 #let cells = ()
@@ -74,13 +81,10 @@
     columns.push(1fr)
     cells2.push(discipline(element.discipline))
 
-    let note = element.note.trim()
-    if element.note.len() > 0 {
+    let noteTxt = element.note.trim()
+    if noteTxt.len() > 0 {
       columns.push(auto)
-      cells2.push(table.cell(rowspan: 2, box(
-        fill: aqua, radius: 6mm, inset: 3mm, 
-        text(size: 12pt, weight: "bold", note)
-      )))
+      cells2.push(table.cell(rowspan: 2, note(noteTxt)))
     }
     if element.ecole {
       columns.push(auto)
@@ -137,5 +141,5 @@
   #underline[guipavas.savate\@hotmail.com] \
   #underline[https://www.guipavas-savate.fr]
   ],
-  image("../images/logo-ffsavate.jpg"),
+  image("../images/logo-ffsavate.jpg", height: 40mm),
 )

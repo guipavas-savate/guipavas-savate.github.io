@@ -68,12 +68,20 @@
 - Vendredi:
   - discipline: Anglaise
     public: Tous Publics
-    age: à partir de 6 ans
+    age: à partir de 11 ans
     niveau: Tous Niveaux
     horaireDebut: 18h00
     horaireFin: 19h00
+    ecole: false
+    note: ""
+  - discipline: Savate
+    public: Enfants
+    age: de 6 ans à 10 ans
+    niveau: Tous Niveaux
+    horaireDebut: 18h15
+    horaireFin: 19h15
     ecole: true
-    note: "Nouveau"
+    note: "École\nKerafloch"
 
 - Samedi:
   - discipline: Savate
