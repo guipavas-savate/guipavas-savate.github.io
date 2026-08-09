@@ -14,9 +14,9 @@
     age: 15 ans et plus
     niveau: Tous Niveaux
     horaireDebut: 18h30
-    horaireFin: 19h30
+    horaireFin: 19h45
     ecole: false
-    note: ""
+    note: "Nouvel\nhoraire"
   
 - Mercredi:
   - discipline: Savate
