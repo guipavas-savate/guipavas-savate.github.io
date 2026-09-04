@@ -1,0 +1,146 @@
+title: Saison 2025-2026
+months:
+    # - title: "Octobre"
+    #   number: 10
+    #   color: "#2ecc40"
+    #   events:
+    #     - date: "Dimanche 5"
+    #       number: 5
+    #       name: Actualisation des arbitres
+    #       place: Saint Thegonnec
+    #     - date: "Dimanche 12"
+    #       name: "Regroupement \n\n compétiteurs A et B"
+    #       place: Lesneven
+    # - title: Novembre
+    #   number: 11
+    #   color: "#ff4136"
+    #   events:
+    #     - date: "Dimanche 2"
+    #       number: 2
+    #       name: Regroupement compétiteurs A
+    #       place: Crozon
+    #     - date: "Vendredi 21"
+    #       number: 21
+    #       name: "Entrainement Anglaise"
+    #       info: "enfants 6 à 10 ans"
+    #       place: "Guipavas \n\n **Kerafloch**"
+    # - title: Décembre
+    #   number: 12
+    #   color: "#0074d9"
+    #   events:
+    #     - date: "Vendredi 5"
+    #       number: 5
+    #       name: "Entrainement Anglaise"
+    #       info: "ados et adultes à partir de 11 ans"
+    #       place: "Guipavas \n\n **Kerafloch**"
+    #     - date: "**Dimanche 7**"
+    #       number: 7
+    #       name: "**Regroupement compétiteurs**"
+    #       info: "A et B à partir de minimes."
+    #       place: "**Guipavas** \n\n Salle du Douvez"
+    #     - date: "Vendredi 12"
+    #       number: 12
+    #       name: "Tournoi Anglaise"
+    #       info: "enfants 6 à 10 ans"
+    #       place: "Guipavas \n\n **Kerafloch**"
+    #     - date: "**Samedi 13**"
+    #       number: 13
+    #       name: "**Démonstration et Repas Club**"
+    #       info: "à 16 heure (mise en place à 14 heure)"
+    #       place: "**Guipavas** \n\n Salle du Douvez"
+    #     - date: "Vendredi 19"
+    #       number: 19
+    #       name: "Tournoi Anglaise"
+    #       info: "ados et adultes à partir de 11 ans"
+    #       place: "Guipavas \n\n **Salle du Douvez**"
+    #     - date: "Samedi 20"
+    #       number: 20
+    #       name: "**Échange Kali-Escrima**"
+    #       info: "Don de jouets (neuf ou d'occasion)"
+    #       place: "**Guipavas** \n\n Salle du Douvez"
+    - title: Janvier
+      number: 1
+      color: "#2ecc40"
+      events:
+        - date: 11 ou 18
+          number: 11
+          name: Gant Jaune
+          place: Crozon
+        - date: Dimanche 25
+          number: 25
+          name: "Championnat Finistère"
+          info: "Avenir et Cadet"
+          place: Lesneven
+    - title: Février
+      number: 2
+      color: "#ff4136"
+      events:
+        - date: "Dimanche 1"
+          number: 1
+          name: "Regroupement compétiteurs A"
+          place: Morlaix
+        - date: Dimanche 8
+          number: 8
+          name: Championnat Avenir 
+          place: Morlaix
+    - title: Mars
+      number: 3
+      color: "#0074d9"
+      events:
+        - date: "**Dimanche 1**"
+          number: 1
+          name: "**Open du Finistère**"
+          place: "**Guipavas**"
+        - date: Dimanche 8
+          number: 8
+          name: "Championnat Cadet et Vétérans"
+          info: "Bretagne"
+          place: Crozon
+        - date: Dimanche 22
+          number: 22
+          name: "Interclub"
+          info: "pré-poussin et poussin"
+          place: Morlaix
+    - title: Avril
+      number: 4
+      color: "#2ecc40"
+      events:
+        - date: "Samedi 4"
+          number: 4
+          number: 4
+          name: "Open de Bretagne"
+          place: --
+        - date: "25 et 26"
+          number: 25
+          name: "Championnat Assaut"
+          info: "forclusion 6 avril"
+          place: --
+    - title: Mai
+      number: 5
+      color: "#ff4136"
+      events:
+        - date: "2 et 3" 
+          number: 2
+          name: "Championnat Cadet"
+          place: --
+        - date: "9 et 10" 
+          number: 9
+          name: "Open Assaut"
+          info: "forclusion 20 avril"
+          place: --
+        - date: "23 et 24" 
+          number: 23
+          name: "Championnat Avenir"
+          info: "Finales Assaut"
+          place: --
+    - title: Juin
+      number: 6
+      color: "#0074d9"
+      events:
+        - date: "5, 6 et 7"
+          number: 5
+          name: "**Weekend Club**"
+          place: "**--**"
+        - date: "Dimanche 14"
+          name: Kangourou et 1000 gants
+          place: Roscoff
