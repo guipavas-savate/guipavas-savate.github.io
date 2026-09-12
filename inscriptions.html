@@ -1,0 +1,61 @@
+---
+layout: default
+title: Inscriptions
+description: Inscription au club
+header: true
+order: 2
+img: /images/inscriptions-2026.png
+downloads:
+  - label: Fiche inscription.pdf
+    href: /affiche/fiche_inscription.pdf
+    description: pour la pré-inscription.
+  - label: Règlement Interieur.pdf
+    href: /ressources/Règlement Interieur.pdf
+    description: Règlement intérieur à signer une fois.
+---
+
+<section id="post" class="section container">
+
+    <div class="content mt-4">
+        <h1 class="title is-4">Inscriptions pour la saison 2026-2027</h1>
+
+        
+Le club ouvre les inscriptions pour la saison 2026-2027.
+Vous pouvez vous inscrire (ou votre enfant) pour la saison prochaine.
+
+Cette année encore, il est possible de s'inscrire par HelloAsso mais le paiement doit se faire sur le moment.
+Utilisez le bouton ci-dessous pour vous inscrire:
+
+<iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/guipavas-savate-boxe-francaise/adhesions/adhesion-club-2026-2027/widget-bouton" style="width: 100%; height: 70px; border: none;" onload="window.addEventListener( 'message', e => { const dataHeight = e.data.height; const haWidgetElement = document.getElementById('haWidget'); haWidgetElement.height = dataHeight + 'px'; } )" ></iframe>
+
+Il est bien sur toujours possible de s'inscrire en remplissant la feuille d'inscription à télécharger.
+Dans ce cas nous ne demandons qu'à remplir la feuille d’inscription.
+La cotisation et le certificat medical ne sont demandés qu’à la rentrée en septembre.
+Si c’est une première inscription, veuillez en plus de signer le règlement intérieur et l’autorisation pour le droit à l’image.
+
+Cette année le prix de la cotisation augmente de 15€ et inclut un teeshirt avec l'adhésion. Elle est maintenant de 125€ pour les enfants et 195 € à partir de 16 ans. Les cotisations incluent désormais un t-shirt avec le paiement.
+Le règlement est demandé pour inscription finale en septembre et peut être effectué en plusieurs fois.
+
+{{site.data.calendar.title}}
+
+Le formulaire de pré-inscription peut être rempli directement sur l’ordinateur avec le visualisateur de PDF, vous pouvez aussi l’imprimer, le remplir et nous l’apporter en cours ou le scanner et le renvoyer par email.
+
+
+        <div class="list has-hoverable-list-items has-visible-pointer-controls">
+        {% for download in page.downloads %}
+            <a class="list-item" href="{{ download.href }}">
+                <div class="list-item-image">
+                    <span class="icon is-large">
+                        <i class="fas fa-2x fa-download"></i>
+                    </span>
+                </div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Télécharger <span class="is-family-code is-size-6">"{{ download.label }}"</span></div>
+                    <div class="list-item-description">{{ download.description }}</div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+
+</section>

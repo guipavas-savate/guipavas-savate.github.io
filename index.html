@@ -6,7 +6,6 @@ header: true
 order: 1
 ---
 
-
 <section data-title="Club">
     <div class="hero">
         <div class="hero-body">
@@ -27,8 +26,9 @@ order: 1
     <div class="column is-half">
         <h1 class="title">Horaires</h1>
         {% include horaires_grand.html %}
+    </div>
 
-
+    <div class="column is-half">
         <div class="content is-centered has-text-centered">
             <div>
                 <p class="is-size-2">Salle</p>
@@ -56,14 +56,6 @@ order: 1
             </div>
 
         </div>
-    </div>
-
-    <div class="column is-half">
-        <h1 class="title">Actualités</h1>
-        {% assign latest = site.posts | slice: 0, 3 %}
-        {% for post in latest %}
-        {% include post_card.html %}
-        {% endfor %}
     </div>
 
 </div>
