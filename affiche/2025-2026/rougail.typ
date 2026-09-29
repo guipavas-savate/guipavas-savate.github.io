@@ -29,7 +29,7 @@
       center + horizon,
       text(
         stroke: stroke, fill: stroke, weight: "bold",
-        text-on-arc(str, width - 15mm, -12deg)
+        text-on-arc(str, width - 15mm, -11deg)
       )
     )
   })
@@ -73,43 +73,21 @@
   dx: -5mm, dy: -10mm,
   roundBrushtext(size: 60mm, stroke: white, fill: accent)[
     #rotate(-10deg)[
-      #text(size: 56pt, weight: "extrabold")[12€ \ ]
+      #text(size: 56pt, weight: "extrabold")[10€ \ ]
       #text(size: 24pt)[la part]
     ]
-  ]))
+  ]
 )
 
 #v(50mm)
 
-#v(10mm)
+//#v(10mm)
 
 #grid(
-  columns: (1fr, 1fr, 1fr),
+  columns: (3fr, 4fr, 6fr),
   align: (center+horizon),
   fill: accent,
   inset: 5mm,
-  grid(
-    columns: (auto, 1fr),
-    align: (center, left),
-    gutter: 5mm,
-    text(size: 40pt, fa-clock()),
-    [
-    De 11h30 \
-    à 13h30
-    ]
-  ),
-  
-  grid(
-    columns: (auto, 1fr),
-    align: (center, left),
-    gutter: 5mm,
-    text(size: 40pt, fa-calendar-day()),
-    [
-    Le samedi 21 \
-    novembre 2026
-    ]
-  ),
-  
   grid(
     columns: (auto, 1fr),
     align: (center, left),
@@ -120,13 +98,34 @@
     Guipavas
     ]
   ),
+  
+  grid(
+    columns: (auto, 1fr),
+    align: (center, left),
+    gutter: 5mm,
+    text(size: 40pt, fa-calendar-day()),
+    [
+    Le samedi 21
+    *novembre* 2026
+    ]
+  ),
+grid(
+    columns: (auto, 1fr),
+    align: (center, left),
+    gutter: 5mm,
+
+    grid.cell(rowspan: 2, text(size: 40pt, fa-clock())),
+    text()[#underline[À emporter:] *17h30 à 19h*],
+    
+    text()[#underline[Sur place:] *à partir de 19h*],
+  ),
 )
 
 #bannerBrushtext(
-  width: 120mm, height: 14mm, 
+  width: 130mm, height: 18mm, 
   //fill: accent, stroke: white,
   fill: second, stroke: white,
-  "Réservations pour le 14 novembre"
+  "Réservations pour le 19 novembre"
 )
 
 #grid(
@@ -142,9 +141,5 @@
     Pour commander \
     Scanner le QR code
   ],
-  qr-code("TODO", height: 40mm, background: second, color: white)
+  qr-code("https://www.helloasso.com/associations/guipavas-savate-boxe-francaise/boutiques/rougail-saucisse-novembre-2026", height: 40mm, background: second, color: white)
 )
-
-
-
-
