@@ -4,6 +4,7 @@
 #let source = yaml("../_data/calendar.yml")
 
 #let calendarHeader(calendar, ) = {
+  v(4mm)
   grid(
     columns: (1fr, 2fr, 1fr), 
     align: horizon+center,
@@ -18,7 +19,7 @@
 }
 
 #let monthTitle(color: blue, content) = rect(
-  fill: rgb(color), stroke: rgb(color), inset: 10pt, radius: .1cm, width: 100%,
+  fill: rgb(color), stroke: rgb(color), inset: 6pt, radius: .1cm, width: 100%,
   align(center, text(fill: white, stroke:white, size: 12pt, content))
 )
 
@@ -40,10 +41,10 @@
     ))
     .flatten()
 
-  block(breakable: false, above: 1cm)[
+  block(breakable: false, above: 5mm)[
     #monthTitle(color: month.color, month.title)
     #grid(
-      columns: (auto,2fr,auto), inset:(2mm,2mm, 2mm), row-gutter: 7mm, 
+      columns: (auto,2fr,auto), inset:(2mm,2mm, 2mm), row-gutter: 4mm, 
       align: (horizon+left, horizon+center, horizon+center),
       fill: (x, y) => if calc.even(y+1) { luma(95%) } else { white },
   
@@ -56,7 +57,7 @@
 
   let print = start == auto
   let printed = 0
-  v(1fr)
+  v(2mm)
 
   for monthData in source.months {
     if start != auto and monthData.number == start.month() { print = true }
@@ -65,7 +66,7 @@
       let startDay = if start != auto and start.month() == monthData.number { start.day() } else { auto }
       month(monthData, start: startDay) 
       v(4mm)
-      v(1fr)
+      v(2mm)
     }
     if count != auto and printed >= count { print = false }
   }
@@ -74,7 +75,7 @@
 #let calendarA4(source, start: auto, count: auto) = {
   set page(
     paper: "a4", flipped: true,
-    margin: (top: 4.5cm, left: .5cm, right: .5cm, bottom: .5cm),
+    margin: (top: 3.5cm, left: .5cm, right: .5cm, bottom: .5cm),
     columns: 2,
     header: calendarHeader(source), header-ascent: .5cm
   )
@@ -100,7 +101,7 @@
     spacing: .1cm
   )
 
-  set text(12pt)
+  set text(10pt)
   calendarMonths(source, start: start, count: count)
 }
 
