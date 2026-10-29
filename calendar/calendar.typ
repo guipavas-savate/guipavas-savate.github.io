@@ -62,7 +62,7 @@
     if start != auto and monthData.number == start.month() { print = true }
     if print { 
       printed = printed + 1
-      let startDay = if start.month() == monthData.number { start.day() } else { auto }
+      let startDay = if start != auto and start.month() == monthData.number { start.day() } else { auto }
       month(monthData, start: startDay) 
       v(4mm)
       v(1fr)
