@@ -41,7 +41,23 @@
     ))
     .flatten()
 
-  block(breakable: false, above: 5mm)[
+  table(
+      columns: (auto,2fr,auto), inset:(2mm,2mm, 2mm), row-gutter: 4mm, 
+      align: (horizon+left, horizon+center, horizon+center),
+      fill: (x, y) => if calc.even(y+1) { luma(95%) } else { white },
+      stroke: none,
+
+      
+      table.header(
+        table.cell(
+          colspan: 3,
+          monthTitle(color: month.color, month.title)
+        )
+      ),
+      ..cells
+  )
+/*
+  block(breakable: true, above: 5mm)[
     #monthTitle(color: month.color, month.title)
     #grid(
       columns: (auto,2fr,auto), inset:(2mm,2mm, 2mm), row-gutter: 4mm, 
@@ -51,6 +67,7 @@
       ..cells
     )
   ]
+  */
 }
 
 #let calendarMonths(source, start: datetime, count: auto) = {
