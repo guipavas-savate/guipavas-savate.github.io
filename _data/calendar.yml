@@ -9,6 +9,11 @@ months:
           name: "Regroupement compétiteurs"
           info: "Comité 29"
           place: "Plomodiern (29)"
+        - date: "Samedi 7"
+          number: 7
+          name: "K1 style light"
+          info: "Ligue FFKMDA"
+          place: "Fouesnant (29)"
         - date: "Jeudi 11"
           number: 11
           name: "Combat Espoir"
@@ -105,6 +110,11 @@ months:
           name: "Assaut Vétéran"
           info: "Ligue"
           place: "?"
+        - date: "Samedi 24"
+          number: 24
+          name: "Open Finistère"
+          info: "Comité 29"
+          place: "Guipavas (29)"
         - date: "Samedi 28"
           number: 28
           name: "Regroupement compétiteurs"
