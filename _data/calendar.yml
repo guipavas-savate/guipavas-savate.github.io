@@ -57,21 +57,26 @@ months:
           name: "Gant jaune"
           info: "Plomodiern (29)"
           place: "Plomodiern (29)"
-        - date: "Dimanche 23"
+        - date: "Samedi 23"
           number: 23
           name: "Kick light"
           info: "Ligue FFKMDA"
           place: "Lamballe (22)"
-        - date: "Dimanche 25"
-          number: 25
-          name: "Jeunes"
+        - date: "Dimanche 24"
+          number: 23
+          name: "Open Savate"
           info: "Comité 29"
-          place: "Lesneven (29)"
-        - date: "30-31"
+          place: "**Guipavas (29)**"
+        - date: "Samedi 30"
           number: 30
           name: "Full contact / light contact"
           info: "National FFKMDA"
           place: "?"
+        - date: "Dimanche 31"
+          number: 25
+          name: "Jeunes"
+          info: "Comité 29"
+          place: "Lesneven (29)"
     - title: Février
       number: 2
       color: "#2ecc40"
